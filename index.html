@@ -37,42 +37,115 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbarScroll">
-      <div class="container">
-        <a href="#sobreNos" class="navbar-brand"
-          ><img src="/assets/img/iconMiaus.png" alt="Ícone da Miaus"
-        /></a>
-        <button
-          class="navbar-toggler"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Navegação do toggle"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item active">
-              <a href="#sobreNos" class="nav-link">Sobre Nós</a>
-            </li>
-            <li class="nav-item">
-              <a href="#produtos" class="nav-link">Produtos</a>
-            </li>
-            <li class="nav-item">
-              <a href="#servicos" class="nav-link">Serviços</a>
-            </li>
-            <li class="nav-item">
-              <a href="#faq" class="nav-link">FAQ</a>
-            </li>
-            <li class="nav-item">
-              <a href="#minhaconta" class="nav-link">Minha Conta</a>
-            </li>
-          </ul>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+          <a href="#sobreNos" class="navbar-brand"
+            ><img src="/assets/img/iconMiaus2.png" alt="Ícone da Miaus"
+          /></a>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Navegação do toggle"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a href="#sobreNos" class="nav-link">Sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a href="#produtos" class="nav-link">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a href="#servicos" class="nav-link">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a href="#faq" class="nav-link">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a href="#minhaconta" class="nav-link">Minha Conta</a>
+              </li>
+              <li class="nav-item">
+                <a href="#carrinho" class="nav-link"
+                  ><img
+                    src="/assets/img/carrinho.png"
+                    alt="ícone do carrinho de compra"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </nav>
+
+      <div class="barraPesquisa">
+        <form action="" method="POST">
+          <label for="procura">O que você procura?</label>
+          <select name="procura" id="procura">
+            <option value="produtos">Produtos</option>
+            <option value="Serviços">Serviços</option>
+          </select>
+
+          <label for="categoria">Tipo ou Categoria</label>
+          <select name="categoria" id="categoria">
+            <option value="racaoSeca">Ração Seca</option>
+            <option value="racaoUmida">Ração Úmida</option>
+            <option value="banhoPequeno">Banho pequeno porte</option>
+            <option value="banhoGrande">Banho grande porte</option>
+            <option value="tosaPequeno">Tosa pequeno porte</option>
+            <option value="tosaGrande">Tosa grande porte</option>
+            <option value="tosaHigienica">Tosa higiênica</option>
+            <option value="telebusca">Tele-busca</option>
+            <option value="teleentrega">Tele-entrega</option>
+          </select>
+
+          <label for="especie">Especie do pet</label>
+          <select name="especie" id="especie">
+            <option value="canino">Canino</option>
+            <option value="felino">Felino</option>
+          </select>
+
+          <label for="localizacao">Localização</label>
+          <select name="localizacao" id="localizacao">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+
+          <button type="submit" class="btnPesquisar">
+            <img src="/assets/img/lupa.png" alt="ícone de lupa" />Pesquisar
+          </button>
+        </form>
       </div>
-    </nav>
+    </header>
 
     <!-- <footer class="text-center">
       <div class="container p-4 pb-0">
