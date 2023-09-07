@@ -117,8 +117,39 @@ footer {
   color: var(--base);
 }
 
+/* .tamanhoFooter {
+  display: flex;
+  width: 65.375rem;
+  justify-content: space-between;
+  align-items: flex-start;
+} */
+
 footer li {
   list-style: none;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.infoContatos {
+  /* padding-right: 1rem; */
+}
+
+.infoContatos ul {
+  flex-direction: row;
+}
+
+.infoContatos li {
+  padding: 0.6rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.infoMiaus ul {
+  flex-direction: column;
 }
 
 .footerDev {
