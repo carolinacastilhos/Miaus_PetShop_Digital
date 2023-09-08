@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título e ícone -->
+    <link rel="icon" type="icon" href="/assets/img/iconPaw.png" />
+    <title>MiAus</title>
+    <!-- JavaScript  -->
+    <script src="/js/script.js" defer></script>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/cadastro.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/2f97061cb0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+          <a href="#inicio" class="navbar-brand"
+            ><img src="/assets/img/iconMiaus2.png" alt="Ícone da Miaus"
+          /></a>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Navegação do toggle"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a href="#sobreNos" class="nav-link">Sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a href="#produtos" class="nav-link">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a href="#servicos" class="nav-link">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a href="#faq" class="nav-link">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a href="#minhaconta" class="nav-link">Minha Conta</a>
+              </li>
+              <li class="nav-item">
+                <a href="#carrinho" class="nav-link"
+                  ><img
+                    src="/assets/img/carrinho.png"
+                    alt="ícone do carrinho de compra"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section>
+      <div id="cadastro">
+        <h1>Cadastro</h1>
+        <h2>Boas-vindas!</h2>
+        <h3>
+          Não se preocupa, fazer o cadastro é rápido, pois é para isto que
+          estamos aqui: facilitar as atividades na rotina tumultuada!
+        </h3>
+      </div>
+      <form
+        action="https://formsubmit.co/carolinacastilhos.vet@gmail.com"
+        method="POST"
+      >
+        <fieldset>
+          <legend>Informações Pessoais</legend>
+          <p>Já possui uma conta? <a href="login.html">Entre aqui.</a></p>
+          <label for="nome">Nome:</label>
+          <input
+            type="text"
+            name="nome"
+            placeholder="Nome completo"
+            id="nome"
+            required
+          />
+          <label for="cpf">CPF:</label>
+          <input
+            type="text"
+            name="cpf"
+            id="cpf"
+            placeholder="XXXXXXXXXXX"
+            pattern="[0-9]{11}"
+            required
+          />
+          <label for="nascimento">Data de Nascimento:</label>
+          <input type="date" name="Nascimento" id="nascimento" required />
+          <input type="radio" value="masculino" id="masculino" name="genero" />
+          <label for="masculino">Masculino</label>
+
+          <input type="radio" value="feminino" id="feminino" name="genero" />
+          <label for="feminino">Feminino</label>
+
+          <input
+            type="radio"
+            value="naoDeclarado"
+            id="naoDeclarado"
+            name="genero"
+          />
+          <label for="naoDeclarado">Prefiro não declarar</label>
+          <label for="email">E-mail:</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Seu melhor e-mail"
+            id="email"
+            required
+          />
+          <label for="emailRepetido">Repita o e-mail:</label>
+          <input
+            type="email"
+            name="emailRepetido"
+            placeholder="Repita o e-mail"
+            id="emailRepetido"
+            required
+          />
+
+          <label for="senha">Digite uma senha:</label>
+          <input
+            type="password"
+            name="senha"
+            id="senha"
+            minlength="8"
+            placeholder="Digite uma senha"
+            required
+          />
+
+          <label for="senhaRepetida">Repita a senha:</label>
+          <input
+            type="password"
+            name="senhaRepetida"
+            id="senhaRepetida"
+            minlength="8"
+            placeholder="Repita a senha"
+            required
+          />
+
+          <label for="logradouro">Logradouro:</label>
+          <input
+            type="text"
+            name="logradouro"
+            placeholder="Nome da rua"
+            class="class_input_name"
+            id="logradouro"
+            required
+          />
+          <label for="numero">Número:</label>
+          <input
+            type="text"
+            name="numero"
+            placeholder="Número"
+            id="numero"
+            required
+          />
+          <label for="complemento">Complemento:</label>
+          <input
+            type="text"
+            name="complemento"
+            placeholder="Apto, Bloco, Prédio..."
+            id="complemento"
+          />
+          <label for="estado">Estado:</label>
+          <select name="estado" id="estado">
+            <option value="">Estado</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+          <label for="cidade">Cidade:</label>
+          <input
+            type="text"
+            name="cidade"
+            placeholder="Informe a cidade"
+            id="cidade"
+            required
+          />
+        </fieldset>
+
+        <fieldset>
+          <legend>Cadastro do seu Pet</legend>
+          <p>
+            Se você tiver mais de um pet, pode cadastrar todos agora ou nenhum,
+            se não tiver tempo no momento!
+            <span
+              >Só será obrigatório tê-los no cadastro no momento do agendamento
+              de serviços.</span
+            >
+          </p>
+          <label for="nomePet">Nome do Pet:</label>
+          <input
+            type="text"
+            name="nomePet"
+            placeholder="Nome do Pet"
+            id="nomePet"
+            required
+          />
+          <label for="especie">Espécie:</label>
+          <select name="especie" id="especie" required>
+            <option value="">Espécie</option>
+            <option value="fanino" name="canino">Canino</option>
+            <option value="felino" name="felino">Felino</option>
+          </select>
+          <label for="raca">Raça:</label>
+          <input
+            type="text"
+            name="raca"
+            placeholder="Informe a raça"
+            id="raca"
+            required
+          />
+          <label for="nascimentoPet">Data de Nascimento:</label>
+          <input type="date" name="Nascimento" id="nascimentoPet" required />
+          <label for="generoPet">Gênero:</label>
+          <select name="generoPet" id="generoPet">
+            <option value="">Gênero</option>
+            <option value="macho" name="generoPet">Macho</option>
+            <option value="femea" name="generoPet">Fêmea</option>
+          </select>
+          <label for="temperamento">Temperamento:</label>
+          <input
+            type="text"
+            name="temperamento"
+            placeholder="dócil, bravo, desconfiado, medroso..."
+            id="temperamento"
+            required
+          />
+          <label for="microchip">Microchip(se houver):</label>
+          <input
+            type="text"
+            name="microchip"
+            placeholder="XXXXXXXXXXX"
+            id="Microchip"
+            pattern="[0-9]{11}"
+          />
+          <label for="historico">Histórico médico:</label>
+          <textarea
+            name="historico"
+            id="historico"
+            placeholder="doenças, vacinas..."
+            rows="6"
+            cols="50"
+          ></textarea>
+        </fieldset>
+
+        <p>Ao finalizar, você receberá uma confirmação por e-mail.</p>
+
+        <button><a href="index.html">Cancelar</a></button>
+        <input type="submit" value="Finalizar" class="btnFinalizar" />
+      </form>
+    </section>
+  </body>
+</html>
