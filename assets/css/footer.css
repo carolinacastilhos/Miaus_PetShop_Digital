@@ -1,0 +1,106 @@
+.footerBox {
+  display: flex;
+  flex-direction: column;
+  height: 21.125rem;
+  width: 100%;
+  padding: 4rem 18rem 1rem;
+  justify-content: space-between;
+  background-color: var(--secondary);
+  font-family: "Montserrat", sans-serif;
+  color: var(--base);
+}
+
+.footerInfos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul {
+  display: flex;
+}
+
+footer li {
+  list-style: none;
+}
+
+.infoContatos {
+  display: flex;
+  width: 18.4375rem;
+  height: 11.9375rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5625rem;
+}
+
+.infoContatos h3,
+.infoMiaus h3 {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0.00625rem;
+  text-align: center;
+}
+
+.infoContatos p {
+  width: 18.4375rem;
+  height: 4.5rem;
+  text-align: center;
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.25rem;
+  letter-spacing: 0.0125rem;
+}
+
+.infoContatos ul {
+  padding-right: 2.5rem;
+}
+
+.infoContatos li {
+  padding: 0.6rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.infoMiaus {
+  display: flex;
+  width: 18.4375rem;
+  height: 11.9375rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.infoMiaus ul {
+  flex-direction: column;
+  padding-right: 2.5rem;
+}
+
+.infoMiaus li {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.0125rem;
+  text-align: center;
+  cursor: pointer;
+  padding-top: 0.5rem;
+}
+
+.infoMiaus li:last-child {
+  margin-bottom: 2rem;
+}
+
+.footerDev {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.5rem;
+  letter-spacing: 0.0125rem;
+  text-align: center;
+}

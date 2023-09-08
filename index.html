@@ -22,6 +22,8 @@
     ></script>
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,7 +42,7 @@
     <header>
       <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
-          <a href="#sobreNos" class="navbar-brand"
+          <a href="#inicio" class="navbar-brand"
             ><img src="/assets/img/iconMiaus2.png" alt="Ícone da Miaus"
           /></a>
           <button
@@ -84,14 +86,16 @@
 
       <div class="barraPesquisa">
         <form action="" method="POST">
-          <label for="procura">O que você procura?</label>
+          <!-- <label for="procura">O que você procura?</label> -->
           <select name="procura" id="procura">
+            <option value="">O que você procura?</option>
             <option value="produtos">Produtos</option>
             <option value="Serviços">Serviços</option>
           </select>
 
-          <label for="categoria">Tipo ou Categoria</label>
+          <!-- <label for="categoria">Tipo ou Categoria</label> -->
           <select name="categoria" id="categoria">
+            <option value="">Tipo ou Categoria</option>
             <option value="racaoSeca">Ração Seca</option>
             <option value="racaoUmida">Ração Úmida</option>
             <option value="banhoPequeno">Banho pequeno porte</option>
@@ -103,14 +107,16 @@
             <option value="teleentrega">Tele-entrega</option>
           </select>
 
-          <label for="especie">Especie do pet</label>
+          <!-- <label for="especie">Especie do pet</label> -->
           <select name="especie" id="especie">
+            <option value="">Espécie do pet</option>
             <option value="canino">Canino</option>
             <option value="felino">Felino</option>
           </select>
 
-          <label for="localizacao">Localização</label>
+          <!-- <label for="localizacao">Localização</label> -->
           <select name="localizacao" id="localizacao">
+            <option value="">Localização</option>
             <option value="AC">Acre</option>
             <option value="AL">Alagoas</option>
             <option value="AP">Amapá</option>
@@ -148,7 +154,7 @@
     </header>
 
     <section>
-      <h1 class="slogan">
+      <h1 class="slogan" id="inicio">
         Sua rotina não pode te impedir de ter um tempo de qualidade com seu pet.
         Conte com a MiAus!
       </h1>
