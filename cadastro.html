@@ -94,6 +94,7 @@
           estamos aqui: facilitar as atividades na rotina tumultuada!
         </h3>
       </div>
+
       <form
         action="https://formsubmit.co/carolinacastilhos.vet@gmail.com"
         method="POST"
@@ -101,6 +102,7 @@
         <fieldset>
           <legend>Informações Pessoais</legend>
           <p>Já possui uma conta? <a href="login.html">Entre aqui.</a></p>
+
           <label for="nome">Nome:</label>
           <input
             type="text"
@@ -109,6 +111,7 @@
             id="nome"
             required
           />
+
           <label for="cpf">CPF:</label>
           <input
             type="text"
@@ -118,14 +121,15 @@
             pattern="[0-9]{11}"
             required
           />
+
           <label for="nascimento">Data de Nascimento:</label>
           <input type="date" name="Nascimento" id="nascimento" required />
+
+          <p>Gênero:</p>
           <input type="radio" value="masculino" id="masculino" name="genero" />
           <label for="masculino">Masculino</label>
-
           <input type="radio" value="feminino" id="feminino" name="genero" />
           <label for="feminino">Feminino</label>
-
           <input
             type="radio"
             value="naoDeclarado"
@@ -133,6 +137,7 @@
             name="genero"
           />
           <label for="naoDeclarado">Prefiro não declarar</label>
+
           <label for="email">E-mail:</label>
           <input
             type="email"
@@ -159,7 +164,6 @@
             placeholder="Digite uma senha"
             required
           />
-
           <label for="senhaRepetida">Repita a senha:</label>
           <input
             type="password"
@@ -179,6 +183,7 @@
             id="logradouro"
             required
           />
+
           <label for="numero">Número:</label>
           <input
             type="text"
@@ -187,6 +192,7 @@
             id="numero"
             required
           />
+
           <label for="complemento">Complemento:</label>
           <input
             type="text"
@@ -194,6 +200,7 @@
             placeholder="Apto, Bloco, Prédio..."
             id="complemento"
           />
+
           <label for="estado">Estado:</label>
           <select name="estado" id="estado">
             <option value="">Estado</option>
@@ -225,6 +232,7 @@
             <option value="SE">Sergipe</option>
             <option value="TO">Tocantins</option>
           </select>
+
           <label for="cidade">Cidade:</label>
           <input
             type="text"
@@ -245,6 +253,7 @@
               de serviços.</span
             >
           </p>
+
           <label for="nomePet">Nome do Pet:</label>
           <input
             type="text"
@@ -253,12 +262,14 @@
             id="nomePet"
             required
           />
+
           <label for="especie">Espécie:</label>
           <select name="especie" id="especie" required>
             <option value="">Espécie</option>
             <option value="fanino" name="canino">Canino</option>
             <option value="felino" name="felino">Felino</option>
           </select>
+
           <label for="raca">Raça:</label>
           <input
             type="text"
@@ -267,14 +278,17 @@
             id="raca"
             required
           />
+
           <label for="nascimentoPet">Data de Nascimento:</label>
           <input type="date" name="Nascimento" id="nascimentoPet" required />
+
           <label for="generoPet">Gênero:</label>
           <select name="generoPet" id="generoPet">
             <option value="">Gênero</option>
             <option value="macho" name="generoPet">Macho</option>
             <option value="femea" name="generoPet">Fêmea</option>
           </select>
+
           <label for="temperamento">Temperamento:</label>
           <input
             type="text"
@@ -283,6 +297,7 @@
             id="temperamento"
             required
           />
+
           <label for="microchip">Microchip(se houver):</label>
           <input
             type="text"
@@ -291,6 +306,7 @@
             id="Microchip"
             pattern="[0-9]{11}"
           />
+
           <label for="historico">Histórico médico:</label>
           <textarea
             name="historico"
