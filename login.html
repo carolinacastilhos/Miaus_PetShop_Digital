@@ -42,7 +42,7 @@
     <header>
       <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
-          <a href="#inicio" class="navbar-brand"
+          <a href="index.html" class="navbar-brand"
             ><img src="/assets/img/iconMiaus2.png" alt="Ícone da Miaus"
           /></a>
           <button
@@ -86,37 +86,46 @@
     </header>
 
     <section>
-      <div id="login">
+      <div class="login">
         <h1>Login</h1>
         <h2>Muito bom ver você novamente!</h2>
       </div>
+      <div class="formBox">
+        <form
+          action="https://formsubmit.co/carolinacastilhos.vet@gmail.com"
+          method="POST"
+        >
+          <div>
+            <label for="emailLogin">E-mail:</label>
+            <input
+              type="email"
+              name="emailLogin"
+              placeholder="Insira seu e-mail"
+              id="emailLogin"
+              required
+            />
+          </div>
 
-      <form
-        action="https://formsubmit.co/carolinacastilhos.vet@gmail.com"
-        method="POST"
-      >
-        <label for="emailLogin">E-mail:</label>
-        <input
-          type="email"
-          name="emailLogin"
-          placeholder="Insira seu e-mail"
-          id="emailLogin"
-          required
-        />
-
-        <label for="senhaLogin">Senha:</label>
-        <input
-          type="password"
-          name="senhaLogin"
-          id="senhaLogin"
-          minlength="8"
-          placeholder="Digite sua senha"
-          required
-        />
-
-        <button><a href="index.html">Voltar</a></button>
-        <input type="submit" value="Entrar" class="btnEntrar" />
-      </form>
+          <div>
+            <label for="senhaLogin">Senha:</label>
+            <input
+              type="password"
+              name="senhaLogin"
+              id="senhaLogin"
+              minlength="8"
+              placeholder="Digite sua senha"
+              required
+            />
+          </div>
+          <p class="cadastrar">
+            Não possui cadastro? <a href="cadastro.html">Clique aqui.</a>
+          </p>
+          <div class="btnBox">
+            <button class="btnVoltar"><a href="index.html">Voltar</a></button>
+            <input type="submit" value="Entrar" class="btnEntrar" />
+          </div>
+        </form>
+      </div>
     </section>
   </body>
 </html>
