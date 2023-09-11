@@ -1,0 +1,16 @@
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.tituloProdutos {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.125rem;
+  font-weight: 800;
+  color: var(--neutral);
+  line-height: 2.0625rem;
+  letter-spacing: 0.0125rem;
+  margin-top: 8rem;
+  padding: 2.5rem;
+}
