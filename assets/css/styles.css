@@ -126,5 +126,3 @@ body {
 .boxServicos li:nth-last-child(-n + 3) {
   background-color: var(--accent);
 }
-
-/* -------------------------------------------------------------------------------- */

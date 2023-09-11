@@ -89,6 +89,10 @@ label {
   background-color: #f9f9f9;
 }
 
+.btnVoltar:hover {
+  border: 2px solid var(--accent);
+}
+
 .btnVoltar a {
   font-family: "Roboto", sans-serif;
   font-size: 1.625rem;
@@ -101,4 +105,8 @@ label {
   border: none;
   font-family: "Roboto", sans-serif;
   font-size: 1.625rem;
+}
+
+.btnEntrar:hover {
+  background-color: #ecbe69;
 }
