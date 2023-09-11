@@ -8,7 +8,7 @@ venda são ração seca e ração úmida, com pelo menos duas opções de cada c
 serviços oferecidos são o de banho e tosa, incluindo as categorias para gatos e cães de
 pequeno e grande porte.
 
-Este projeto faz parte da avaliação de desenpenho na disciplina Fundamentos de Sistemas Web no Curso de Análise de Desenvolvimento de Sistemas na PUCRS, no 3º trimestre.
+Este projeto faz parte da disciplina Fundamentos de Sistemas Web do Curso de Análise de Desenvolvimento de Sistemas na PUCRS no 3º trimestre.
 
 ## Tecnologias utilizadas
 

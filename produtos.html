@@ -69,10 +69,14 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
               <li class="nav-item active">
-                <a href="#sobreNos" class="nav-link">Sobre Nós</a>
+                <a
+                  href="https://github.com/carolinacastilhos/Miaus_PetShop_Digital"
+                  class="nav-link"
+                  >Sobre Nós</a
+                >
               </li>
               <li class="nav-item">
-                <a href="#produtos" class="nav-link">Produtos</a>
+                <a href="produtos.html" class="nav-link">Produtos</a>
               </li>
               <li class="nav-item">
                 <a href="#servicos" class="nav-link">Serviços</a>
@@ -160,6 +164,13 @@
             <option value="TO">Tocantins</option>
           </select>
 
+          <input
+            type="text"
+            name="procurar"
+            placeholder="Pesquisar..."
+            id="procurar"
+          />
+
           <button type="submit" class="btnPesquisar">
             <img src="/assets/img/lupa.png" alt="ícone de lupa" />Pesquisar
           </button>
@@ -169,59 +180,122 @@
 
     <h1 class="tituloProdutos">Produtos</h1>
 
-    <div class="container">
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide carousel-dark"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-inner" style="height: 20em">
-          <div
-            class="carousel-item h-100 active"
-            style="
-              background: url(/assets/img/Produto1.png) center/contain no-repeat;
-            "
-          ></div>
-          <div
-            class="carousel-item h-100"
-            style="
-              background: url(/assets/img/Produto2.png) center/contain no-repeat;
-            "
-          ></div>
-          <div
-            class="carousel-item h-100"
-            style="
-              background: url(/assets/img/Produto3.png) center/contain no-repeat;
-            "
-          ></div>
-          <div
-            class="carousel-item h-100"
-            style="
-              background: url(/assets/img/Produto4.png) center/contain no-repeat;
-            "
-          ></div>
+    <section class="produtosSemana">
+      <h2>Os produtos mais procurados da semana:</h2>
+      <div class="container">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide carousel-dark"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner" style="height: 20em">
+            <div
+              class="carousel-item h-100 active"
+              style="
+                background: url(/assets/img/Produto1.png) center/contain
+                  no-repeat;
+              "
+            ></div>
+            <div
+              class="carousel-item h-100"
+              style="
+                background: url(/assets/img/Produto2.png) center/contain
+                  no-repeat;
+              "
+            ></div>
+            <div
+              class="carousel-item h-100"
+              style="
+                background: url(/assets/img/Produto3.png) center/contain
+                  no-repeat;
+              "
+            ></div>
+            <div
+              class="carousel-item h-100"
+              style="
+                background: url(/assets/img/Produto4.png) center/contain
+                  no-repeat;
+              "
+            ></div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
       </div>
+    </section>
+
+    <div class="btnBox">
+      <button class="btnVejaMais">Veja mais</button>
     </div>
 
+    <section class="informacoes">
+      <article>
+        <h2>Alimentação dos nossos pets</h2>
+        <div>
+          <p>
+            Ração seca e ração úmida são duas opções de alimentação para cães e
+            gatos. Você sabe as vantagens de cada uma?
+          </p>
+
+          <div class="racoes">
+            <h3>Ração seca</h3>
+            <p>
+              É uma opção mais conveniente e de armazenamento fácil. Ajuda a
+              manter a saúde bucal, reduzindo o acúmulo de tártaro, além de
+              conter menos água, sendo mais concentrada em nutrientes. Pode ser
+              deixada fora por mais tempo sem estragar.
+            </p>
+
+            <h3>Ração úmida</h3>
+            <p>
+              Possui alta umidade, o que ajuda na hidratação do pet. Isto é
+              importante principalmente para os gatinhos, que não são muito fãs
+              de água! É altamente palatável, sendo uma boa escolha para animais
+              mais exigentes. Tem textura macia, ideal para animais com
+              problemas dentários. Pode ser usada como complemento à ração seca.
+            </p>
+          </div>
+
+          <p>
+            Como pode-se ver, ambas tem seus benefícios e podem ser utilizadas
+            de acordo com as necessidades específicas de cada animal. Consultar
+            um veterinário para determinar a melhor opção é sempre recomendado.
+          </p>
+
+          <p>
+            Nós trabalhamos com os dois tipos de alimentação para cães e gatos,
+            e você encontra diversas marcas e sabores aqui na nossa plataforma
+            digital. Fique a vontade!
+          </p>
+
+          <p>Saiba mais sobre o assunto no nosso <span>blog</span>.</p>
+        </div>
+      </article>
+
+      <aside>
+        <img
+          class="imgGato"
+          src="/assets/img/gatoDePe.png"
+          alt="gato em duas patas olhando para cima"
+        />
+      </aside>
+    </section>
     <footer>
       <div class="footerBox">
         <div class="footerInfos">
