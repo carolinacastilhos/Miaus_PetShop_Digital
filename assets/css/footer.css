@@ -8,6 +8,7 @@
   background-color: var(--secondary);
   font-family: "Montserrat", sans-serif;
   color: var(--base);
+  margin-top: 5rem;
 }
 
 .footerInfos {
