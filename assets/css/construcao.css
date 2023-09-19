@@ -1,0 +1,32 @@
+.caoOculos {
+  margin-left: 5rem;
+}
+
+.tituloBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+  color: var(--neutral);
+  letter-spacing: 0.2px;
+  width: 569px;
+  height: 262px;
+  /* margin-left: 45rem;
+  margin-top: -22.5rem; */
+  margin: -22.5rem 0 0 45rem;
+}
+
+.tituloConstrucao {
+  font-size: 50px;
+  font-weight: 800;
+  line-height: 58px;
+  width: 569px;
+  height: 92px;
+}
+
+.subtituloConstrucao {
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 36px;
+  width: 438px;
+}
