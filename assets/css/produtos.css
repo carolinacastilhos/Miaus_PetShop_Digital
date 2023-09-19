@@ -75,9 +75,9 @@ article {
   font-size: 1rem;
 }
 
-.informacoes span {
+.informacoes a {
   color: var(--primary);
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .racoes {
