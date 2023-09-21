@@ -6,6 +6,8 @@
     <!-- Título e ícone -->
     <link rel="icon" type="icon" href="/assets/img/iconPaw.png" />
     <title>MiAus</title>
+    <!-- JavaScript  -->
+    <script src="/js/script.js" defer></script>
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -14,14 +16,25 @@
       crossorigin="anonymous"
     />
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
     <!-- CSS -->
     <link rel="stylesheet" href="/assets/css/styles.css" />
     <link rel="stylesheet" href="/assets/css/header.css" />
     <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/servicos.css" />
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -40,7 +53,7 @@
     <header>
       <nav class="navbar fixed-top navbar-expand-lg">
         <div class="container">
-          <a href="#inicio" class="navbar-brand"
+          <a href="/index.html" class="navbar-brand"
             ><img src="/assets/img/iconMiaus2.png" alt="Ícone da Miaus"
           /></a>
           <button
@@ -63,19 +76,19 @@
                 >
               </li>
               <li class="nav-item">
-                <a href="/pages/produtos.html" class="nav-link">Produtos</a>
+                <a href="produtos.html" class="nav-link">Produtos</a>
               </li>
               <li class="nav-item">
-                <a href="/pages/servicos.html" class="nav-link">Serviços</a>
+                <a href="servicos.html" class="nav-link">Serviços</a>
               </li>
               <li class="nav-item">
-                <a href="/pages/construcao.html" class="nav-link">FAQ</a>
+                <a href="construcao.html" class="nav-link">FAQ</a>
               </li>
               <li class="nav-item">
-                <a href="/pages/login.html" class="nav-link">Minha Conta</a>
+                <a href="login.html" class="nav-link">Minha Conta</a>
               </li>
               <li class="nav-item">
-                <a href="/pages/construcao.html" class="nav-link"
+                <a href="construcao.html" class="nav-link"
                   ><img
                     src="/assets/img/carrinho.png"
                     alt="ícone do carrinho de compra"
@@ -165,41 +178,55 @@
       </div>
     </header>
 
-    <section>
-      <h1 class="slogan" id="inicio">
-        Sua rotina não pode te impedir de ter um tempo de qualidade com seu pet.
-        Conte com a MiAus!
-      </h1>
-      <div class="boxProdutos">
-        <h2>Produtos</h2>
-        <h3>Categorias</h3>
-        <ul>
-          <li><a href="">Ração Seca Cães</a></li>
-          <li><a href="">Ração Úmida Cães</a></li>
-          <li><a href="">Ração Seca Gatos</a></li>
-          <li><a href="">Ração Úmida Gatos</a></li>
-        </ul>
-      </div>
-      <div class="boxServicos">
-        <h2>Serviços</h2>
-        <h3>Tipos</h3>
-        <ul>
-          <li><a href="">Banhos Animais pequeno porte</a></li>
-          <li><a href="">Banhos Animais grande porte</a></li>
-          <li><a href="">Tosa Animais pequeno porte</a></li>
-          <li><a href="">Tosa Animais grande porte</a></li>
-          <li><a href="">Tosa Higiênica</a></li>
-          <li><a href="">Tele-Busca</a></li>
-          <li><a href="">Tele-Entrega</a></li>
-        </ul>
-      </div>
-    </section>
+    <h1 class="tituloServicos">Serviços</h1>
 
-    <aside>
-      <div class="imgPgInicial">
-        <img src="/assets/img/caoGrama.png" alt="cão deitado na grama" />
-      </div>
-    </aside>
+    <section class="informacoes">
+      <article>
+        <h2>Alimentação dos nossos pets</h2>
+        <div>
+          <p>
+            Ração seca e ração úmida são duas opções de alimentação para cães e
+            gatos. Você sabe as vantagens de cada uma?
+          </p>
+
+          <div class="racoes">
+            <h3>Ração seca</h3>
+            <p>
+              É uma opção mais conveniente e de armazenamento fácil. Ajuda a
+              manter a saúde bucal, reduzindo o acúmulo de tártaro, além de
+              conter menos água, sendo mais concentrada em nutrientes. Pode ser
+              deixada fora por mais tempo sem estragar.
+            </p>
+
+            <h3>Ração úmida</h3>
+            <p>
+              Possui alta umidade, o que ajuda na hidratação do pet. Isto é
+              importante principalmente para os gatinhos, que não são muito fãs
+              de água! É altamente palatável, sendo uma boa escolha para animais
+              mais exigentes. Tem textura macia, ideal para animais com
+              problemas dentários. Pode ser usada como complemento à ração seca.
+            </p>
+          </div>
+
+          <p>
+            Como pode-se ver, ambas tem seus benefícios e podem ser utilizadas
+            de acordo com as necessidades específicas de cada animal. Consultar
+            um veterinário para determinar a melhor opção é sempre recomendado.
+          </p>
+
+          <p>
+            Nós trabalhamos com os dois tipos de alimentação para cães e gatos,
+            e você encontra diversas marcas e sabores aqui na nossa plataforma
+            digital. Fique a vontade!
+          </p>
+
+          <p>
+            Saiba mais sobre o assunto no nosso
+            <a href="construcao.html">blog</a>.
+          </p>
+        </div>
+      </article>
+    </section>
 
     <footer>
       <div class="footerBox">
