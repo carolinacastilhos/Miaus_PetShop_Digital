@@ -42,4 +42,5 @@ article {
 .informacoes a {
   color: var(--primary);
   text-decoration: none;
+  font-weight: 800;
 }
