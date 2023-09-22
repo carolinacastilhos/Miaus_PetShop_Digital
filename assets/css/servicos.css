@@ -10,6 +10,32 @@
   padding: 2.5rem;
 }
 
+.cardLink {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.cardLink button {
+  width: 7rem;
+  height: 3rem;
+  border-radius: 1.25rem;
+  background-color: var(--accent);
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  margin: 5rem 0;
+}
+
+.cardLink button:hover {
+  background-color: #ecbe69;
+}
+
+.cardLink a {
+  text-decoration: none;
+  color: var(--neutral);
+}
+
 article {
   display: flex;
   flex-direction: column;
