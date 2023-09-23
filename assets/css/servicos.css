@@ -28,6 +28,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.cardText {
+  font-weight: 300;
+}
+
 .cardPrice span {
   font-weight: 900;
   font-size: 1.3rem;
@@ -74,14 +78,30 @@ article {
 }
 
 .informacoes h2,
-.informacoes h3 {
+.informacoes h3,
+.informacoes h4 {
   font-family: "Montserrat", sans-serif;
 }
 
 .informacoes h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--neutral);
+  line-height: 2.0625rem;
+  letter-spacing: 0.0125rem;
+  margin-top: 2.5rem;
+  padding: 2.5rem;
+}
+
+.informacoes h3 {
   font-size: 2rem;
   font-weight: 700;
   color: var(--primary);
+}
+
+.informacoes h4 {
+  font-weight: 700;
 }
 
 .informacoes p {
