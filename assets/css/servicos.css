@@ -10,6 +10,30 @@
   padding: 2.5rem;
 }
 
+.cardBody {
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--neutral);
+}
+
+.cardText,
+.cardPrice,
+.cardInfo {
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.cardPrice span {
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+
 .cardLink {
   display: flex;
   margin: auto;
@@ -24,7 +48,7 @@
   border: none;
   font-family: "Roboto", sans-serif;
   font-size: 1.2rem;
-  margin: 5rem 0;
+  /* margin: 5rem 0; */
 }
 
 .cardLink button:hover {

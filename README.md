@@ -14,8 +14,8 @@ porte.
 
 Até o momento, o sistema web MiAus já apresenta o desenvolvimento inicial de cinco telas
 essenciais e uma complementar: "Página Inicial", "Produtos", "Serviços", "Cadastro", "Login" e "Em Construção". A navegação entre essas páginas é
-facilitada por meio da barra de navegação (navbar). Além disso, tanto a "Página Inicial" quanto a
-tela de "Produtos" estão equipadas com uma barra de pesquisa abrangente para proporcionar
+facilitada por meio da barra de navegação (navbar). Além disso, tanto a "Página Inicial" quanto as
+telas de "Produtos" e "Serviços" estão equipadas com uma barra de pesquisa abrangente para proporcionar
 uma experiência de usuário mais completa. Em todas as páginas, também foi implementado um
 rodapé (footer) que contém informações de contato para facilitar a comunicação com os
 usuários.
