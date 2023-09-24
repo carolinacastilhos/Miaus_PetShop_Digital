@@ -6,6 +6,8 @@
     <!-- Título e ícone -->
     <link rel="icon" type="icon" href="/assets/img/iconPaw.png" />
     <title>MiAus</title>
+    <!-- JavaScript  -->
+    <script src="/js/script.js" defer></script>
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -94,10 +96,7 @@
         <h2>Muito bom ver você novamente!</h2>
       </div>
       <div class="formBox">
-        <form
-          action="https://formsubmit.co/carolinacastilhos.vet@gmail.com"
-          method="POST"
-        >
+        <form>
           <div>
             <label for="emailLogin">E-mail:</label>
             <input
@@ -125,7 +124,12 @@
           </p>
           <div class="btnBox">
             <button class="btnVoltar"><a href="/index.html">Voltar</a></button>
-            <input type="submit" value="Entrar" class="btnEntrar" />
+            <input
+              type="submit"
+              value="Entrar"
+              class="btnEntrar"
+              onclick="logar()"
+            />
           </div>
         </form>
       </div>
