@@ -20,23 +20,29 @@ body {
   background-color: var(--base);
 }
 
-.slogan {
+.slogan,
+.pergunta {
   margin-top: 4.25rem;
-  margin-left: 4.81rem;
   color: var(--neutral);
   font-family: "Montserrat", sans-serif;
   font-size: 2.0625rem;
-  font-style: normal;
-  font-weight: 700;
   line-height: 3.125rem;
   letter-spacing: 0.0125rem;
   width: 43.9375rem;
 }
 
+.slogan {
+  margin-left: 4.81rem;
+  font-weight: 700;
+}
+
+.pergunta {
+  margin-left: 16rem;
+  font-weight: 500;
+}
+
 .imgPgInicial img {
-  /* margin-top: -46.75rem;
-  margin-left: 60rem; */
-  margin-top: -52.75rem;
+  margin-top: -60.75rem;
   margin-left: 57rem;
 }
 
