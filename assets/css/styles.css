@@ -94,6 +94,14 @@ body {
   margin: 0.8rem;
 }
 
+.boxProdutos li:hover,
+.boxServicos li:hover {
+  transform: scale(1.1);
+  box-shadow: 11px 10px 31px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 11px 10px 31px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 11px 10px 31px -8px rgba(0, 0, 0, 0.75);
+}
+
 .boxProdutos li:nth-child(-n + 2),
 .boxServicos li:nth-child(-n + 2) {
   background-color: var(--secondary);
