@@ -10,12 +10,12 @@ porte.
 
 [MiAus - A PetShop online do seu pet!](https://miaus-pet-shop-digital.vercel.app/)
 
-![landingPage](https://github.com/carolinacastilhos/Miaus_PetShop_Digital/assets/117789578/46562a5e-84ec-4977-a558-c8956e61f930)
+![página inicial](https://github.com/carolinacastilhos/Miaus_PetShop_Digital/assets/117789578/3f346cae-37e4-4781-898d-dfb42e28ef71)
 
-Até o momento, o sistema web MiAus já apresenta o desenvolvimento inicial de cinco telas
+Até o momento, o sistema web MiAus apresenta o desenvolvimento inicial de cinco telas
 essenciais e uma complementar: "Página Inicial", "Produtos", "Serviços", "Cadastro", "Login" e "Em Construção". A navegação entre essas páginas é
 facilitada por meio da barra de navegação (navbar). Além disso, tanto a "Página Inicial" quanto as
-telas de "Produtos" e "Serviços" estão equipadas com uma barra de pesquisa abrangente para proporcionar
+telas "Produtos" e "Serviços" estão equipadas com uma barra de pesquisa abrangente para proporcionar
 uma experiência de usuário mais completa. Em todas as páginas, também foi implementado um
 rodapé (footer) que contém informações de contato para facilitar a comunicação com os
 usuários.
