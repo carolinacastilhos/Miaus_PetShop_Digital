@@ -15,7 +15,8 @@ section {
   padding: 2.5rem;
 }
 
-.produtosSemana h2 {
+.produtosSemana h2,
+.cardsServicos h2 {
   font-family: "Montserrat", sans-serif;
   color: var(--neutral);
   font-size: 1.4rem;
@@ -100,6 +101,10 @@ section {
   background-color: #ecbe69;
 }
 
+.informacoes {
+  margin-bottom: -18rem;
+}
+
 article {
   display: flex;
   flex-direction: column;
@@ -155,5 +160,7 @@ article {
 }
 
 .imgGato {
-  margin-left: 70rem;
+  /* margin-left: 70rem; */
+  margin-left: 74rem;
+  /* margin-bottom: -7rem */
 }
