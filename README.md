@@ -51,3 +51,33 @@ empregado até o momento foi o fornecido pelo Bootstrap e algumas validações d
 plataforma for avançando, a intenção é realizar a migração do sistema para o React, colocando ênfase na
 reutilização de componentes. Além disso, planeja-se implementar o Node.js no back-end para
 aprimorar a eficiência e escalabilidade da plataforma.
+
+## Testes e Validações
+
+Os formulários desempenham um papel crítico no desenvolvimento de plataformas 
+online, pois são a porta de entrada para a obtenção de informações e cadastros dos usuários. 
+É essencial garantir que esses formulários sejam cuidadosamente projetados e validados para 
+a entrada precisa dos dados.
+ Nos códigos HTML das páginas "Login" e "Cadastro", foram incorporadas verificações nos 
+campos, incluindo senha e CPF, para assegurar a precisão das informações inseridas. Além 
+disso, esses campos foram marcados como obrigatórios (required), tornando-se um requisito 
+essencial para o processo de cadastro e login, conforme exemplificado abaixo:
+
+![WhatsApp Image 2023-09-24 at 02 53 48](https://github.com/carolinacastilhos/Miaus_PetShop_Digital/assets/117789578/2b5109c4-4031-455c-b358-44aca5315bbb)
+
+![WhatsApp Image 2023-09-24 at 02 54 59](https://github.com/carolinacastilhos/Miaus_PetShop_Digital/assets/117789578/63a76f29-786f-4a02-838d-497dddc737d8)
+
+A validação foi implementada principalmente através do HTML, conforme exemplificado 
+acima. No entanto, no login também foi realizada a validação através do Javascript, com a função 
+logar() no arquivo script.js, que é chamada no momento que o usuário clica o botão “Entrar” devido ao atributo onClick no HTML: 
+
+![WhatsApp Image 2023-09-24 at 01 56 28](https://github.com/carolinacastilhos/Miaus_PetShop_Digital/assets/117789578/778fe701-03e9-4911-ba60-d3b2aab6552a)
+
+![WhatsApp Image 2023-09-24 at 01 56 49](https://github.com/carolinacastilhos/Miaus_PetShop_Digital/assets/117789578/d34390e8-73be-4f29-a97b-451c2ab3461f)
+
+Esta função permite que seja validada a entrada do login quando o campo de email e a senha são iguais 
+a “admin123” emitindo o alerta "Login realizado com sucesso! Você receberá um e-mail de confirmação." e redirecionando à página inicial.
+Caso contrário, enquanto o email de entrada e a senha não forem iguais à "admin12", haverá a 
+emissão do alerta “Usuário ou senha incorretos.”. A validação do formulário de cadastro 
+atualmente só foi realizada a nível de HTML, mas será desenvolvida posteriormente a outros 
+níveis, garantindo a integridade e a precisão dos dados.
