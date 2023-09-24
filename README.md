@@ -28,6 +28,7 @@ pastas:
 - assets: nesta pasta estão os recursos utilizados para o desenvolvimento do sistema: - css: aqui estão os arquivos css das estilizações separadas de cada página
   e/ou elemento, devidamente identificadas; - img: aqui estão as imagens utilizadas na plataforma, como imagens de
   produtos, promocionais, ilustrativas, entre outras;
+- js: a pasta js contém todos os arquivos javascript desenvolvidos.
 - pages: esta pasta contém os arquivos html de todas as páginas desenvolvidas da
   plataforma até o momento, exceto o index;
 - index.html: o arquivo index.html fica na raiz (root) da aplicação, sendo o arquivo da
