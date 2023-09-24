@@ -23,7 +23,20 @@ section {
   font-weight: 600;
   /* margin-left: 10rem; */
   text-align: center;
-  margin-bottom: 1.2rem;
+  margin-bottom: 2.8rem;
+}
+
+.cardsServicos h2 {
+  margin-top: 1rem;
+}
+
+.card {
+  border-radius: 1.25rem;
+  box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  border-radius: 1.25rem 1.25rem 0 0;
 }
 
 .cardBody {
@@ -101,9 +114,9 @@ section {
   background-color: #ecbe69;
 }
 
-.informacoes {
+/* .informacoes {
   margin-bottom: -18rem;
-}
+} */
 
 article {
   display: flex;
@@ -131,7 +144,7 @@ article {
   color: var(--neutral);
   line-height: 2.0625rem;
   letter-spacing: 0.0125rem;
-  margin-top: 2.5rem;
+  margin-top: -1.5rem;
   padding: 2.5rem;
 }
 
@@ -157,10 +170,4 @@ article {
 
 .racoes {
   padding: 1.5rem 0;
-}
-
-.imgGato {
-  /* margin-left: 70rem; */
-  margin-left: 74rem;
-  /* margin-bottom: -7rem */
 }
