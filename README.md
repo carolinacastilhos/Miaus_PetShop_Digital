@@ -45,7 +45,7 @@ desenvolvimento web responsivo, e a IDE Visual Studio Code.
 Para aprimorar o design e a usabilidade, foi incorporado recursos como FontAwesome, uma
 biblioteca de ícones que permite a inclusão de ícones vetoriais em projetos web, e o Google
 Fonts, uma coleção de fontes tipográficas gratuitas fornecida pelo Google. O JavaScript
-empregado até o momento se limitou ao que é fornecido pelo Bootstrap.
+empregado até o momento foi o fornecido pelo Bootstrap e algumas validações de login.
 
 À medida que o desenvolvimento das demais páginas e funcionalidades da
 plataforma for avançando, a intenção é realizar a migração do sistema para o React, colocando ênfase na
