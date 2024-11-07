@@ -56,6 +56,7 @@
           <a href="/index.html" class="navbar-brand"
             ><img src="/assets/img/iconMiaus2.png" alt="Ícone da Miaus"
           /></a>
+          <!-- Navbar reduzida -->
           <button
             class="navbar-toggler"
             data-bs-toggle="collapse"
@@ -66,10 +67,12 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto">
-              <li class="nav-item active">
+              <li class="nav-item">
                 <a
+                  target="_blank"
                   href="https://github.com/carolinacastilhos/Miaus_PetShop_Digital"
                   class="nav-link"
                   >Sobre Nós</a
@@ -82,13 +85,15 @@
                 <a href="servicos.html" class="nav-link">Serviços</a>
               </li>
               <li class="nav-item">
-                <a href="construcao.html" class="nav-link">FAQ</a>
+                <a target="_blank" href="construcao.html" class="nav-link"
+                  >FAQ</a
+                >
               </li>
               <li class="nav-item">
                 <a href="login.html" class="nav-link">Minha Conta</a>
               </li>
               <li class="nav-item">
-                <a href="construcao.html" class="nav-link"
+                <a target="_blank" href="construcao.html" class="nav-link"
                   ><img
                     src="/assets/img/carrinho.png"
                     alt="ícone do carrinho de compra"
@@ -410,33 +415,79 @@
       </article>
     </section>
 
-    <footer>
-      <div class="footerBox">
-        <div class="footerInfos">
-          <div class="infoContatos">
-            <h3>Entre em Contato!</h3>
-            <p>
-              Estamos sempre trazendo muitas novidades e conteúdos sobre o mundo
-              pet nas nossas redes sociais.
-            </p>
-            <ul>
-              <li><i class="fa-brands fa-facebook footerIcon"></i></li>
-              <li><i class="fa-brands fa-instagram footerIcon"></i></li>
-              <li><i class="fa-brands fa-twitter footerIcon"></i></li>
-            </ul>
+    <footer class="border-top bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-6 text-left">
+            <div class="infoContatos">
+              <h3>Entre em Contato!</h3>
+              <p>
+                Estamos sempre trazendo muitas novidades e conteúdos sobre o
+                mundo pet nas nossas redes sociais.
+              </p>
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.facebook.com/"
+                    class="nav-link"
+                    ><i class="fa-brands fa-facebook footerIcon"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/carolcastilhos/"
+                    class="nav-link"
+                    ><i class="fa-brands fa-instagram footerIcon"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://x.com/carotilhos"
+                    class="nav-link"
+                    ><i class="fa-brands fa-twitter footerIcon"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="infoMiaus">
-            <h3>Informações da MiAus</h3>
-            <ul>
-              <li>Sobre nós</li>
-              <li>Carreira</li>
-              <li>Temos vagas</li>
-              <li>Blog</li>
-            </ul>
+          <div class="col-12 col-md-6 text-left">
+            <div class="infoMiaus">
+              <h3>Informações da MiAus</h3>
+              <ul>
+                <li>
+                  <a
+                    target="_blank"
+                    href="https://github.com/carolinacastilhos/Miaus_PetShop_Digital"
+                    class="nav-link"
+                    >Sobre Nós</a
+                  >
+                </li>
+                <li>
+                  <a target="_blank" href="construcao.html" class="nav-link"
+                    >Carreira</a
+                  >
+                </li>
+                <li>
+                  <a target="_blank" href="construcao.html" class="nav-link"
+                    >Temos Vagas</a
+                  >
+                </li>
+                <li>
+                  <a target="_blank" href="construcao.html" class="nav-link"
+                    >Blog</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-        <div class="footerDev">
-          <p>Made With Love By Carolina 2023 &copy; All Right Reserved</p>
+        <div class="row">
+          <div class="col-12">
+            <p class="footer-copy">&copy; Made With Love By Carolina 2024</p>
+          </div>
         </div>
       </div>
     </footer>
