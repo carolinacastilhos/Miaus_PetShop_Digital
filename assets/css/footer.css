@@ -8,7 +8,9 @@ footer ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-left: 2.5rem;
+  /* padding-left: 0.5rem; */
+  padding-right: 2rem;
+  gap: 1rem;
 }
 
 .infoMiaus ul {
@@ -42,7 +44,7 @@ footer .infoMiaus {
 }
 
 .infoContatos li i {
-  font-size: 1.75rem;
+  font-size: 2rem;
 }
 
 .footer-copy {
