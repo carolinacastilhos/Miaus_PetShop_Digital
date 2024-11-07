@@ -20,6 +20,10 @@ body {
   background-color: var(--base);
 }
 
+header {
+  padding-top: 12.5rem;
+}
+
 .slogan,
 .pergunta {
   margin-top: 4.25rem;
