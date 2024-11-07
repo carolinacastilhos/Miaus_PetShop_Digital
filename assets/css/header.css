@@ -1,0 +1,66 @@
+.navbar {
+  background-color: rgb(250, 247, 245, 0.6);
+}
+
+.navbar a {
+  color: var(--neutral);
+  padding: 0.5rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.navbar .nav-link:hover {
+  font-weight: 700;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  background-color: var(--secondary);
+  border-radius: 4px;
+}
+
+.navbar li {
+  padding: 0.8rem;
+}
+
+.barraPesquisa {
+  margin-top: 9.31rem;
+  margin-left: 4.81rem;
+  width: 62rem;
+  height: 4.5625rem;
+  border-radius: 1.25rem;
+  background: rgba(221, 221, 221, 0.7);
+}
+
+.barraPesquisa form {
+  margin-left: 2rem;
+  padding: 0.6rem;
+}
+
+.barraPesquisa select,
+.barraPesquisa input {
+  width: 8.625rem;
+  height: 2.375rem;
+  border: none;
+  border-radius: 0.625rem;
+  background: #faf7f5;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-family: Roboto;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  margin-left: 0.5rem;
+}
+
+.btnPesquisar {
+  width: 8.625rem;
+  height: 3.125rem;
+  background-color: var(--warning);
+  font-family: "Roboto", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 700;
+  color: var(--base);
+  border-radius: 0.625rem;
+  border: none;
+  margin-left: 0.5rem;
+}
+
+.btnPesquisar img {
+  padding-right: 0.5rem;
+}

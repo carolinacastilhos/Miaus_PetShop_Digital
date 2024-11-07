@@ -1,0 +1,112 @@
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.login {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: var(--neutral);
+  line-height: 2.0625rem;
+  letter-spacing: 0.0125rem;
+  margin: auto;
+  margin-top: 8rem;
+  padding: 2.5rem;
+}
+
+.login h1 {
+  font-size: 3.125rem;
+  font-weight: 700;
+}
+
+.login h2 {
+  font-size: 1.5625rem;
+  font-weight: 700;
+}
+
+.formBox {
+  display: flex;
+  width: 46.125rem;
+  height: 37.375rem;
+  background-color: #f9f9f9;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 1.2rem;
+  margin: auto;
+}
+
+form {
+  padding: 2.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+input {
+  width: 40.875rem;
+  height: 2.375rem;
+  border-bottom: 1px solid #000;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  background: #f9f9f9;
+}
+
+label {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.cadastrar {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1875rem;
+  font-weight: 500;
+}
+
+.cadastrar a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.btnBox {
+  display: flex;
+  justify-content: center;
+  gap: 4.5rem;
+}
+
+.btnVoltar,
+.btnEntrar {
+  width: 10.625rem;
+  height: 3.5625rem;
+  border-radius: 1.25rem;
+}
+
+.btnVoltar {
+  border: 1px solid var(--accent);
+  background-color: #f9f9f9;
+}
+
+.btnVoltar:hover {
+  border: 2px solid var(--accent);
+}
+
+.btnVoltar a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.625rem;
+  text-decoration: none;
+  color: var(--neutral);
+}
+
+.btnEntrar {
+  background-color: var(--accent);
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.625rem;
+}
+
+.btnEntrar:hover {
+  background-color: #ecbe69;
+}

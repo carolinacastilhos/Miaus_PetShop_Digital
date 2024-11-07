@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Título e ícone -->
+    <link rel="icon" type="icon" href="/assets/img/iconPaw.png" />
+    <title>MiAus</title>
+    <!-- JavaScript  -->
+    <script src="/js/script.js" defer></script>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/header.css" />
+    <link rel="stylesheet" href="/assets/css/footer.css" />
+    <link rel="stylesheet" href="/assets/css/servicos.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&family=Roboto:wght@100;300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/2f97061cb0.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar fixed-top navbar-expand-lg">
+        <div class="container">
+          <a href="/index.html" class="navbar-brand"
+            ><img src="/assets/img/iconMiaus2.png" alt="Ícone da Miaus"
+          /></a>
+          <button
+            class="navbar-toggler"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Navegação do toggle"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item active">
+                <a
+                  href="https://github.com/carolinacastilhos/Miaus_PetShop_Digital"
+                  class="nav-link"
+                  >Sobre Nós</a
+                >
+              </li>
+              <li class="nav-item">
+                <a href="produtos.html" class="nav-link">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a href="servicos.html" class="nav-link">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a href="construcao.html" class="nav-link">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a href="login.html" class="nav-link">Minha Conta</a>
+              </li>
+              <li class="nav-item">
+                <a href="construcao.html" class="nav-link"
+                  ><img
+                    src="/assets/img/carrinho.png"
+                    alt="ícone do carrinho de compra"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="barraPesquisa">
+        <form
+          action="https://formsubmit.co/carolinacastilhos.vet@gmail.com"
+          method="POST"
+        >
+          <!-- <label for="procura">O que você procura?</label> -->
+          <select name="procura" id="procura">
+            <option value="">O que você procura?</option>
+            <option value="produtos">Produtos</option>
+            <option value="Serviços">Serviços</option>
+          </select>
+
+          <!-- <label for="categoria">Tipo ou Categoria</label> -->
+          <select name="categoria" id="categoria">
+            <option value="">Tipo ou Categoria</option>
+            <option value="racaoSeca">Ração Seca</option>
+            <option value="racaoUmida">Ração Úmida</option>
+            <option value="banhoPequeno">Banho pequeno porte</option>
+            <option value="banhoGrande">Banho grande porte</option>
+            <option value="tosaPequeno">Tosa pequeno porte</option>
+            <option value="tosaGrande">Tosa grande porte</option>
+            <option value="tosaHigienica">Tosa higiênica</option>
+            <option value="telebusca">Tele-busca</option>
+            <option value="teleentrega">Tele-entrega</option>
+          </select>
+
+          <!-- <label for="especie">Especie do pet</label> -->
+          <select name="especie" id="especie">
+            <option value="">Espécie do pet</option>
+            <option value="canino">Canino</option>
+            <option value="felino">Felino</option>
+          </select>
+
+          <!-- <label for="localizacao">Localização</label> -->
+          <select name="localizacao" id="localizacao">
+            <option value="">Localização</option>
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+          </select>
+
+          <input
+            type="text"
+            name="procurar"
+            placeholder="Pesquisar..."
+            id="procurar"
+          />
+
+          <button type="submit" class="btnPesquisar">
+            <img src="/assets/img/lupa.png" alt="ícone de lupa" />Pesquisar
+          </button>
+        </form>
+      </div>
+    </header>
+
+    <h1 class="tituloServicos">Serviços</h1>
+
+    <section class="cardsServicos container mt-3 mb-5">
+      <!-- primeira linha -->
+      <div class="row">
+        <!-- primeira coluna -->
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="/assets/img/banhoPequeno2.jpeg"
+              alt="cão pequeno dentro de banheira tomando banho"
+              style="width: 100%"
+            />
+            <div class="cardBody">
+              <h3 class="cardTitle text-center">Banho Cães Pequeno Porte</h3>
+              <p class="cardText text-center">
+                Banho para cães até 12 kg, incluindo limpeza da pelagem e das
+                orelhas, corte de unhas e escovação dos dentes. Serviços extras
+                incluem desembolo, hidratação e banho tonalizante.
+              </p>
+              <p class="cardPrice">A partir de <span>R$ 39.00</span></p>
+              <p class="cardInfo">Contamos com serviço de Tele-busca!</p>
+              <div class="cardLink mb-3">
+                <button>
+                  <a href="construcao.html">Agendar</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- segunda coluna -->
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="/assets/img/banhoGrande.jpeg"
+              alt="cão grande dentro de banheira tomando banho"
+              style="width: 100%"
+            />
+            <div class="cardBody">
+              <h3 class="cardTitle text-center">Banho Cães Grande Porte</h3>
+              <p class="cardText text-center">
+                Banho para cães acima de 12 kg, incluindo limpeza da pelagem e
+                das orelhas, corte de unhas e escovação dos dentes. Serviços
+                extras incluem desembolo, hidratação e banho tonalizante.
+              </p>
+              <p class="cardPrice">A partir de <span>R$ 59.00</span></p>
+              <p class="cardInfo">Contamos com serviço de Tele-busca!</p>
+              <div class="cardLink mb-3">
+                <button>
+                  <a href="construcao.html">Agendar</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- terceira coluna -->
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="/assets/img/banhoGato.jpg"
+              alt="gato tomando banho"
+              style="width: 100%"
+            />
+            <div class="cardBody">
+              <h3 class="cardTitle text-center">Banho em Gatos</h3>
+              <p class="cardText text-center">
+                Banho em gatos, incluindo limpeza da pelagem e das orelhas,
+                corte de unhas e escovação dos dentes. Serviços extras incluem
+                desembolo, hidratação e banho tonalizante. O banho em gatos
+                conta com um ambiente e cuidados especializados para a espécie!
+              </p>
+              <p class="cardPrice">A partir de <span>R$ 39.00</span></p>
+              <p class="cardInfo">Contamos com serviço de Tele-busca!</p>
+              <div class="cardLink mb-3">
+                <button>
+                  <a href="construcao.html">Agendar</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- segunda linha -->
+      <div class="row mt-4">
+        <!-- primeira coluna -->
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="/assets/img/TosaHigienica.jpg"
+              alt="cao pequeno sendo escovado e higienizado"
+              style="width: 100%"
+            />
+            <div class="cardBody">
+              <h3 class="cardTitle text-center">Tosa Higiênica</h3>
+              <p class="cardText text-center">
+                Tosa realizada em animais de pequeno ou grande porte, com
+                tesoura ou máquina, somente da área abdominal, patinhas,
+                períneo, e, se necessário, pelos ao redor da boca, e não de todo
+                o corpo.
+              </p>
+              <p class="cardPrice">A partir de <span>R$ 49.00</span></p>
+              <p class="cardInfo">Contamos com serviço de Tele-busca!</p>
+              <div class="cardLink mb-3">
+                <button>
+                  <a href="construcao.html">Agendar</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- segunda coluna -->
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="/assets/img/tosaTesoura.jpeg"
+              alt="cão pequeno sendo tosado com tesoura"
+              style="width: 100%"
+            />
+            <div class="cardBody">
+              <h3 class="cardTitle text-center">Tosa com Tesoura</h3>
+              <p class="cardText text-center">
+                Tosa realizada em animais de pequeno ou grande porte, com
+                tesoura. A tosa a tesoura é indicada para pelagens longas, para
+                a tosa de gatos e para os animais que possuem alergias ou
+                desejam preveni-las.
+              </p>
+              <p class="cardPrice">A partir de <span>R$ 59.00</span></p>
+              <p class="cardInfo">Contamos com serviço de Tele-busca!</p>
+              <div class="cardLink mb-3">
+                <button>
+                  <a href="construcao.html">Agendar</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- terceira coluna -->
+        <div class="col-lg-4">
+          <div class="card">
+            <img
+              class="card-img-top"
+              src="/assets/img/tosaMaquina.jpeg"
+              alt="cão pequeno sendo tosado com máquina de tosa"
+              style="width: 100%"
+            />
+            <div class="cardBody">
+              <h3 class="cardTitle text-center">Tosa com Máquina</h3>
+              <p class="cardText text-center">
+                Tosa realizada em animais de pequeno ou grande porte, com
+                máquina. Indicada geralmente para tosas mais rápidas e para
+                deixar as pelagens mais curtas.
+              </p>
+              <p class="cardPrice">A partir de <span>R$ 49.00</span></p>
+              <p class="cardInfo">Contamos com serviço de Tele-busca!</p>
+              <div class="cardLink mb-3">
+                <button>
+                  <a href="construcao.html">Agendar</a>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="informacoes">
+      <h2>Momento Saiba Mais</h2>
+      <article>
+        <h3>A Arte da Tosa</h3>
+        <div>
+          <p>
+            O cuidado com nossos amigos de quatro patas vai muito além de uma
+            simples rotina. Para garantir o bem-estar e saúde dos nossos fiéis
+            companheiros, oferecer banho e tosa é essencial. E quando falamos de
+            tosa, duas técnicas se destacam: a clássica tosa com tesoura e a
+            eficiente tosa com máquina.
+          </p>
+
+          <div class="tosas">
+            <h4>Tosa com Tesoura: Arte e Precisão</h4>
+            <p>
+              A tosa com tesoura é uma verdadeira arte, exigindo paciência e
+              habilidade para esculpir o visual perfeito para seu pet. Esta
+              técnica detalhada permite ajustes precisos para realçar a beleza
+              natural de cães e gatos, sendo ótima para áreas sensíveis ou de
+              difícil acesso. Ideal para pets que não se adaptam bem ao barulho
+              da máquina.
+            </p>
+
+            <h4>Tosa com Máquina: Eficiência e Praticidade</h4>
+            <p>
+              A tosa com máquina é reconhecida pela eficiência e rapidez,
+              perfeita para manter o pelo curto e uniforme, especialmente em
+              raças que demandam essa estética. É ideal para remover pelos em
+              excesso e para tosas de higiene, proporcionando uma pelagem fresca
+              e de fácil cuidado. Essa técnica é recomendada para pets
+              acostumados ao barulho da máquina e em épocas mais quentes para
+              garantir o conforto térmico dos animais.
+            </p>
+          </div>
+
+          <p>
+            A escolha entre tosa com tesoura e tosa com máquina depende do tipo
+            de pelo do seu pet, do seu estilo de vida e da preferência do
+            próprio animal. Consultar um veterinário para determinar a melhor
+            opção é sempre recomendado.
+          </p>
+
+          <p>
+            Nós trabalhamos com os dois tipos de tosa para cães e gatos, e você
+            encontra profissionais altamente qualificados em nossos serviços!
+            <a href="construcao.html">Agende o seu horário aqui</a>.
+          </p>
+
+          <p>
+            Saiba mais sobre o assunto no nosso
+            <a href="construcao.html">blog</a>.
+          </p>
+        </div>
+      </article>
+    </section>
+
+    <footer>
+      <div class="footerBox">
+        <div class="footerInfos">
+          <div class="infoContatos">
+            <h3>Entre em Contato!</h3>
+            <p>
+              Estamos sempre trazendo muitas novidades e conteúdos sobre o mundo
+              pet nas nossas redes sociais.
+            </p>
+            <ul>
+              <li><i class="fa-brands fa-facebook footerIcon"></i></li>
+              <li><i class="fa-brands fa-instagram footerIcon"></i></li>
+              <li><i class="fa-brands fa-twitter footerIcon"></i></li>
+            </ul>
+          </div>
+          <div class="infoMiaus">
+            <h3>Informações da MiAus</h3>
+            <ul>
+              <li>Sobre nós</li>
+              <li>Carreira</li>
+              <li>Temos vagas</li>
+              <li>Blog</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footerDev">
+          <p>Made With Love By Carolina 2023 &copy; All Right Reserved</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

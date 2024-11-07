@@ -1,0 +1,162 @@
+section {
+  display: flex;
+  flex-direction: column;
+}
+
+.cadastro {
+  width: 60%;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: var(--neutral);
+  line-height: 2.0625rem;
+  letter-spacing: 0.0125rem;
+  margin: auto;
+  margin-top: 8rem;
+  padding: 2.5rem;
+}
+
+.cadastro h1 {
+  font-size: 3.125rem;
+  font-weight: 800;
+}
+
+.cadastro h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--secondary);
+}
+
+.infos {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.infos a {
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.infos span {
+  font-weight: 500;
+}
+
+.confirmacao {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.1875rem;
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: auto;
+  justify-content: space-around;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  padding-top: 1rem;
+}
+
+.formLinha {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+input#nome,
+#logradouro,
+#email,
+#emailRepetido {
+  width: 25rem;
+}
+
+input#cpf,
+#senha,
+#senhaRepetida,
+#complemento,
+#nomePet,
+#temperamento,
+#raca,
+#microchip,
+#data,
+#cidade {
+  width: 15rem;
+}
+
+.historicoMedico {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 0;
+}
+
+legend {
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 800;
+}
+
+input {
+  /* width: 40.875rem;
+  height: 2.375rem; */
+  border-bottom: 1px solid #000;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  background: var(--base);
+}
+
+label,
+.genero {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.btnBox {
+  display: flex;
+  justify-content: center;
+  gap: 4.5rem;
+}
+
+.btnVoltar,
+.btnFinalizar {
+  width: 10.625rem;
+  height: 3.5625rem;
+  border-radius: 1.25rem;
+}
+
+.btnVoltar {
+  border: 1px solid var(--accent);
+  background-color: #f9f9f9;
+}
+
+.btnVoltar:hover {
+  border: 2px solid var(--accent);
+}
+
+.btnVoltar a {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.625rem;
+  text-decoration: none;
+  color: var(--neutral);
+}
+
+.btnFinalizar {
+  background-color: var(--accent);
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.625rem;
+}
+
+.btnFinalizar:hover {
+  background-color: #ecbe69;
+}

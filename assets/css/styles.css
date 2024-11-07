@@ -1,0 +1,142 @@
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #65c3c8;
+  --secondary: #ef9fbc;
+  --accent: #eeaf3a;
+  --neutral: #291334;
+  --base: #faf7f5;
+  --info: #3abff8;
+  --success: #36d399;
+  --warning: #fbbd23;
+  --error: #f87272;
+}
+
+body {
+  background-color: var(--base);
+}
+
+.slogan,
+.pergunta {
+  margin-top: 4.25rem;
+  color: var(--neutral);
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.0625rem;
+  line-height: 3.125rem;
+  letter-spacing: 0.0125rem;
+  width: 43.9375rem;
+}
+
+.slogan {
+  margin-left: 4.81rem;
+  font-weight: 700;
+}
+
+.pergunta {
+  margin-left: 16rem;
+  font-weight: 500;
+}
+
+.imgPgInicial img {
+  margin-top: -60.75rem;
+  margin-left: 57rem;
+}
+
+.boxProdutos,
+.boxServicos {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  letter-spacing: 0.0125rem;
+  color: var(--neutral);
+  text-align: center;
+  width: 42rem;
+  margin-left: 5.81rem;
+  margin-top: 3rem;
+}
+
+.boxProdutos h2,
+.boxServicos h2 {
+  font-size: 1.5625rem;
+  font-weight: 700;
+}
+
+.boxProdutos h3,
+.boxServicos h3 {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+.boxProdutos ul,
+.boxServicos ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 0.5rem;
+}
+
+.boxProdutos li,
+.boxServicos li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 7.9375rem;
+  height: 4.33369rem;
+  border-radius: 1.5rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 0.8rem;
+}
+
+.boxProdutos li:hover,
+.boxServicos li:hover {
+  transform: scale(1.1);
+  box-shadow: 11px 10px 31px -8px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 11px 10px 31px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 11px 10px 31px -8px rgba(0, 0, 0, 0.75);
+}
+
+.boxProdutos li:nth-child(-n + 2),
+.boxServicos li:nth-child(-n + 2) {
+  background-color: var(--secondary);
+}
+
+.boxProdutos li:nth-child(3),
+.boxProdutos li:nth-child(4),
+.boxServicos li:nth-child(3),
+.boxServicos li:nth-child(4) {
+  background-color: var(--primary);
+}
+
+.boxProdutos a,
+.boxServicos a {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--neutral);
+}
+
+.boxProdutos a {
+  font-size: 0.9375rem;
+}
+
+.boxServicos a {
+  font-size: 0.8125rem;
+}
+
+.boxProdutos {
+  height: 11.02119rem;
+}
+
+.boxServicos {
+  height: 17.375rem;
+}
+
+.boxServicos li:nth-last-child(-n + 3) {
+  background-color: var(--accent);
+}

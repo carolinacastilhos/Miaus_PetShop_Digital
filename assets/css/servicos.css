@@ -1,0 +1,125 @@
+.tituloServicos {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.125rem;
+  font-weight: 800;
+  color: var(--neutral);
+  line-height: 2.0625rem;
+  letter-spacing: 0.0125rem;
+  margin-top: 2.5rem;
+  padding: 2.5rem;
+}
+
+.card {
+  border-radius: 1.25rem;
+  box-shadow: 1px 2px 6px 0px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  border-radius: 1.25rem 1.25rem 0 0;
+}
+
+.cardBody {
+  padding: 1.5rem;
+}
+
+.cardTitle {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--neutral);
+}
+
+.cardText,
+.cardPrice,
+.cardInfo {
+  font-size: 1.1rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.cardText {
+  font-weight: 300;
+}
+
+.cardPrice span {
+  font-weight: 900;
+  font-size: 1.3rem;
+  color: var(--accent);
+}
+
+.cardLink {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+
+.cardLink button {
+  width: 7rem;
+  height: 3rem;
+  border-radius: 1.25rem;
+  background-color: var(--accent);
+  border: none;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.2rem;
+  /* margin: 5rem 0; */
+}
+
+.cardLink button:hover {
+  background-color: #ecbe69;
+}
+
+.cardLink a {
+  text-decoration: none;
+  color: var(--neutral);
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  width: 50rem;
+  height: 46rem;
+  background-color: #f9f9f9;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.15);
+  border-radius: 1.2rem;
+  margin: auto;
+  justify-content: space-evenly;
+  padding: 3.5rem;
+}
+
+.informacoes h2,
+.informacoes h3,
+.informacoes h4 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.informacoes h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: 800;
+  color: var(--neutral);
+  line-height: 2.0625rem;
+  letter-spacing: 0.0125rem;
+  margin-top: 2.5rem;
+  padding: 2.5rem;
+}
+
+.informacoes h3 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.informacoes h4 {
+  font-weight: 700;
+}
+
+.informacoes p {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+.informacoes a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 800;
+}
