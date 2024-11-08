@@ -103,33 +103,44 @@
     <header>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-12">
             <form
               class="justify-content-center justify-content-md-start mb-3 mb-md-0"
             >
               <div class="input-group input-group-sm">
                 <input
                   type="text"
+                  id="search"
                   class="form-control inputPesquisa"
-                  placeholder="Digite aqui o que procura"
+                  placeholder="Digite aqui o serviço que procura"
                 />
                 <button class="btnPesquisar">Pesquisar</button>
               </div>
             </form>
           </div>
-          <div class="col-12 col-md-6"></div>
         </div>
       </div>
     </header>
 
     <h1 class="tituloServicos">Serviços</h1>
 
+    <div
+      id="noResultsMessage"
+      class="msgbusca"
+      style="display: none; text-align: center"
+    >
+      Não foram encontrados os produtos pesquisados.
+    </div>
+
     <section class="cardsServicos container mt-3 mb-5">
       <!-- primeira linha -->
       <div class="row">
         <!-- primeira coluna -->
-        <div class="col-lg-4">
-          <div class="card">
+        <div
+          class="col-lg-4 product-item"
+          data-product-name="Banho Cães Pequeno Porte"
+        >
+          <div class="card h-100">
             <img
               class="card-img-top"
               src="/assets/img/banhoPequeno2.jpeg"
@@ -144,7 +155,7 @@
               </p>
               <p class="cardPrice">A partir de <span>R$ 39.00</span></p>
               <p class="cardInfo">Contamos com serviço de Tele-busca!</p>
-              <div class="cardLink mb-3">
+              <div class="cardLink">
                 <button>
                   <a href="construcao.html">Agendar</a>
                 </button>
@@ -154,8 +165,11 @@
         </div>
 
         <!-- segunda coluna -->
-        <div class="col-lg-4">
-          <div class="card">
+        <div
+          class="col-lg-4 product-item"
+          data-product-name="Banho Cães Grande Porte"
+        >
+          <div class="card h-100">
             <img
               class="card-img-top"
               src="/assets/img/banhoGrande.jpeg"
@@ -170,7 +184,7 @@
               </p>
               <p class="cardPrice">A partir de <span>R$ 59.00</span></p>
               <p class="cardInfo">Contamos com serviço de Tele-busca!</p>
-              <div class="cardLink mb-3">
+              <div class="cardLink">
                 <button>
                   <a href="construcao.html">Agendar</a>
                 </button>
@@ -180,8 +194,8 @@
         </div>
 
         <!-- terceira coluna -->
-        <div class="col-lg-4">
-          <div class="card">
+        <div class="col-lg-4 product-item" data-product-name="Banho em Gatos">
+          <div class="card h-100">
             <img
               class="card-img-top"
               src="/assets/img/banhoGato.jpg"
@@ -197,7 +211,7 @@
               </p>
               <p class="cardPrice">A partir de <span>R$ 39.00</span></p>
               <p class="cardInfo">Contamos com serviço de Tele-busca!</p>
-              <div class="cardLink mb-3">
+              <div class="cardLink">
                 <button>
                   <a href="construcao.html">Agendar</a>
                 </button>
@@ -210,8 +224,8 @@
       <!-- segunda linha -->
       <div class="row mt-4">
         <!-- primeira coluna -->
-        <div class="col-lg-4">
-          <div class="card">
+        <div class="col-lg-4 product-item" data-product-name="Tosa Higiênica">
+          <div class="card h-100">
             <img
               class="card-img-top"
               src="/assets/img/TosaHigienica.jpg"
@@ -227,7 +241,7 @@
               </p>
               <p class="cardPrice">A partir de <span>R$ 49.00</span></p>
               <p class="cardInfo">Contamos com serviço de Tele-busca!</p>
-              <div class="cardLink mb-3">
+              <div class="cardLink">
                 <button>
                   <a href="construcao.html">Agendar</a>
                 </button>
@@ -237,8 +251,8 @@
         </div>
 
         <!-- segunda coluna -->
-        <div class="col-lg-4">
-          <div class="card">
+        <div class="col-lg-4 product-item" data-product-name="Tosa com Tesoura">
+          <div class="card h-100">
             <img
               class="card-img-top"
               src="/assets/img/tosaTesoura.jpeg"
@@ -254,7 +268,7 @@
               </p>
               <p class="cardPrice">A partir de <span>R$ 59.00</span></p>
               <p class="cardInfo">Contamos com serviço de Tele-busca!</p>
-              <div class="cardLink mb-3">
+              <div class="cardLink">
                 <button>
                   <a href="construcao.html">Agendar</a>
                 </button>
@@ -264,8 +278,8 @@
         </div>
 
         <!-- terceira coluna -->
-        <div class="col-lg-4">
-          <div class="card">
+        <div class="col-lg-4 product-item" data-product-name="Tosa com Máquina">
+          <div class="card h-100">
             <img
               class="card-img-top"
               src="/assets/img/tosaMaquina.jpeg"
@@ -280,7 +294,7 @@
               </p>
               <p class="cardPrice">A partir de <span>R$ 49.00</span></p>
               <p class="cardInfo">Contamos com serviço de Tele-busca!</p>
-              <div class="cardLink mb-3">
+              <div class="cardLink">
                 <button>
                   <a href="construcao.html">Agendar</a>
                 </button>

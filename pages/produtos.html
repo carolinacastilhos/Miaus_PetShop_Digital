@@ -103,21 +103,21 @@ u<!DOCTYPE html>
     <header>
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-12">
             <form
               class="justify-content-center justify-content-md-start mb-3 mb-md-0"
             >
               <div class="input-group input-group-sm">
                 <input
                   type="text"
+                  id="search"
                   class="form-control inputPesquisa"
-                  placeholder="Digite aqui o que procura"
+                  placeholder="Digite aqui o produto que procura"
                 />
                 <button class="btnPesquisar">Pesquisar</button>
               </div>
             </form>
           </div>
-          <div class="col-12 col-md-6"></div>
         </div>
       </div>
     </header>
@@ -187,10 +187,21 @@ u<!DOCTYPE html>
     <section class="cardsServicos container mt-3">
       <h2>Produtos que você encontra na MiAus</h2>
 
+      <div
+        id="noResultsMessage"
+        class="msgbusca"
+        style="display: none; text-align: center"
+      >
+        Não foram encontrados os produtos pesquisados.
+      </div>
+
       <div class="row">
         <!-- primeira coluna -->
-        <div class="col-lg-4 d-flex align-items-stretch">
-          <div class="card">
+        <div
+          class="col-lg-4 product-item"
+          data-product-name="Pet Delícia Veggie Cães Adultos"
+        >
+          <div class="card h-100">
             <a href="" class="position-absolute p-3 text-danger">
               <i class="fa-regular fa-heart cardicon"></i>
             </a>
@@ -222,8 +233,11 @@ u<!DOCTYPE html>
         </div>
 
         <!-- segunda coluna -->
-        <div class="col-lg-4">
-          <div class="card d-flex align-items-stretch">
+        <div
+          class="col-lg-4 product-item"
+          data-product-name="Gran Plus Gourmet para Gatos Castrados"
+        >
+          <div class="card h-100">
             <a href="" class="position-absolute right-0 p-3 text-danger">
               <i class="fa-solid fa-heart cardicon"></i>
             </a>
@@ -256,8 +270,11 @@ u<!DOCTYPE html>
         </div>
 
         <!-- terceira coluna -->
-        <div class="col-lg-4">
-          <div class="card d-flex align-items-stretch">
+        <div
+          class="col-lg-4 product-item"
+          data-product-name="Premier Nattu Cães Adultos Porte Pequeno"
+        >
+          <div class="card h-100">
             <a href="" class="position-absolute p-3 text-danger">
               <i class="fa-regular fa-heart cardicon"></i>
             </a>
@@ -293,8 +310,11 @@ u<!DOCTYPE html>
       <!-- segunda linha -->
       <div class="row mt-4">
         <!-- primeira coluna -->
-        <div class="col-lg-4">
-          <div class="card d-flex align-items-stretch">
+        <div
+          class="col-lg-4 product-item"
+          data-product-name="Royal Canin Gatos Adultos Sensible"
+        >
+          <div class="card h-100">
             <a href="" class="position-absolute right-0 p-3 text-danger">
               <i class="fa-solid fa-heart cardicon"></i>
             </a>
@@ -326,8 +346,11 @@ u<!DOCTYPE html>
         </div>
 
         <!-- segunda coluna -->
-        <div class="col-lg-4">
-          <div class="card d-flex align-items-stretch">
+        <div
+          class="col-lg-4 product-item"
+          data-product-name="Sachê Pedigree Adulto Raças Pequenas Sabor Cordeiro"
+        >
+          <div class="card h-100">
             <a href="" class="position-absolute p-3 text-danger">
               <i class="fa-regular fa-heart cardicon"></i>
             </a>
@@ -359,8 +382,11 @@ u<!DOCTYPE html>
         </div>
 
         <!-- terceira coluna -->
-        <div class="col-lg-4">
-          <div class="card d-flex align-items-stretch">
+        <div
+          class="col-lg-4 product-item"
+          data-product-name="Golden Seleção Natural Cães Adultos"
+        >
+          <div class="card h-100">
             <a href="" class="position-absolute p-3 text-danger">
               <i class="fa-regular fa-heart cardicon"></i>
             </a>
@@ -392,7 +418,9 @@ u<!DOCTYPE html>
       </div>
 
       <div class="btnBox">
-        <button class="btnVejaMais">Veja mais</button>
+        <button class="btnVejaMais">
+          <a href="construcao.html">Veja Mais</a>
+        </button>
       </div>
     </section>
 

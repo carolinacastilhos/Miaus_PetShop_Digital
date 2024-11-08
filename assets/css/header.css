@@ -52,3 +52,24 @@
 .btnPesquisar:hover {
   background-color: #e7be72;
 }
+
+#suggestionsList {
+  display: none;
+  border: 1px solid #ccc;
+  position: absolute;
+  background: white;
+  z-index: 1000;
+  width: 10rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0.4rem;
+}
+
+.suggestion-item {
+  padding: 0.625rem;
+  cursor: pointer;
+}
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}

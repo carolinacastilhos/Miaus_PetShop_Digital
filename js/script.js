@@ -12,16 +12,33 @@ function logar() {
   }
 }
 
-function search() {
-  let input = document.getElementById("searchbar").value;
-  input = input.toLowerCase();
-  let word = document.getElementByClassName("");
+const searchInput = document.getElementById("search"); // Campo de pesquisa
+const productItems = document.querySelectorAll(".product-item"); // Todos os itens de produto
+const searchButton = document.querySelector(".btnPesquisar"); // Botão de pesquisa
+const noResultsMessage = document.getElementById("noResultsMessage"); // Mensagem de "não encontrado"
 
-  for (i = 0; i < word.length; i++) {
-    if (!word[i].innerHTML.toLowerCase().includes(input)) {
-      word[i].style.display = "none";
+// Função de busca
+function searchProducts(event) {
+  event.preventDefault(); // Impede o comportamento padrão do botão dentro do formulário
+
+  const searchTerm = searchInput.value.toLowerCase();
+  let hasResults = false;
+
+  productItems.forEach((item) => {
+    const productName = item.dataset.productName.toLowerCase(); // Usando data-product-name
+
+    // Verifica se o termo de busca está no nome do produto
+    if (productName.includes(searchTerm)) {
+      item.style.display = "block";
+      hasResults = true;
     } else {
-      word[i].style.display = "list-item";
+      item.style.display = "none";
     }
-  }
+  });
+
+  // Mostra ou oculta a mensagem caso nenhum resultado seja encontrado
+  noResultsMessage.style.display = hasResults ? "none" : "block";
 }
+
+// Adiciona o evento de clique no botão de pesquisa
+searchButton.addEventListener("click", searchProducts);
