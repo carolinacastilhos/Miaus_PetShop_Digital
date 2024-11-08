@@ -1,6 +1,4 @@
 * {
-  /* margin: 0;
-  padding: 0; */
   box-sizing: border-box;
 }
 
@@ -26,14 +24,16 @@ header {
 
 .boxprincipal {
   margin-top: 4.25rem;
+  padding: 0 1.5rem;
 }
 
 .titulos {
   color: var(--neutral);
   font-family: "Montserrat", sans-serif;
   font-size: 2.0625rem;
-  width: 45rem;
   padding-bottom: 2rem;
+  max-width: 45rem;
+  margin: 0 auto;
 }
 
 .slogan {
@@ -53,6 +53,8 @@ header {
   font-style: normal;
   color: var(--neutral);
   text-align: center;
+  margin-bottom: 1.25rem;
+  padding: 0 1rem;
 }
 
 .boxServicos {
@@ -133,11 +135,11 @@ header {
 }
 
 .boxProdutos {
-  height: 11.02119rem;
+  height: auto;
 }
 
 .boxServicos {
-  height: 17.375rem;
+  height: auto;
 }
 
 .boxServicos li:nth-last-child(-n + 3) {
@@ -149,4 +151,45 @@ header {
   font-size: 1.5rem;
   font-weight: 700;
   color: var(--error);
+}
+
+@media (max-width: 768px) {
+  .titulos h1 {
+    font-size: 1.6rem;
+  }
+
+  .titulos h2 {
+    font-size: 1.2rem;
+  }
+
+  .boxProdutos,
+  .boxServicos {
+    margin-bottom: 1.25rem;
+    padding: 0;
+  }
+
+  .imgPgInicial img {
+    max-width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .titulos h1 {
+    font-size: 1.3rem;
+  }
+
+  .titulos h2 {
+    font-size: 1rem;
+  }
+
+  .boxProdutos,
+  .boxServicos {
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+
+  .imgPgInicial img {
+    max-width: 100%;
+  }
 }

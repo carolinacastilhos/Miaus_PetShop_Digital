@@ -1,36 +1,26 @@
-.caoOculos {
-  margin-left: 5rem;
+.pagconstrucao {
+  padding-top: 7rem;
+  /* flex: 1;  */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .tituloBox {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   font-family: "Montserrat", sans-serif;
   color: var(--neutral);
-  letter-spacing: 0.2px;
-  width: 569px;
-  height: 262px;
-  /* margin-left: 45rem;
-  margin-top: -22.5rem; */
-  margin: -22.5rem 0 0 45rem;
+  letter-spacing: 0.125rem;
+  max-width: 35rem;
 }
 
 .tituloConstrucao {
-  font-size: 50px;
+  font-size: 3.125rem;
   font-weight: 800;
-  line-height: 58px;
-  width: 569px;
-  height: 92px;
 }
 
 .subtituloConstrucao {
-  font-size: 25px;
+  font-size: 1.6rem;
   font-weight: 700;
-  line-height: 36px;
-  width: 438px;
-}
-
-.figurecao {
-  padding-bottom: 2rem;
+  line-height: 2.25rem;
+  margin-top: 1.5rem;
 }
