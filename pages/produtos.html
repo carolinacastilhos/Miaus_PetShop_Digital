@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+u<!DOCTYPE html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -50,136 +50,75 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navbar fixed-top navbar-expand-lg">
-        <div class="container">
-          <a href="/index.html" class="navbar-brand"
-            ><img src="/assets/img/iconMiaus2.png" alt="Ícone da Miaus"
-          /></a>
-          <!-- Navbar reduzida -->
-          <button
-            class="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Navegação do toggle"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container">
+        <a href="/index.html" class="navbar-brand"
+          ><img src="/assets/img/iconMiaus2.png" alt="Ícone da Miaus"
+        /></a>
+        <!-- Navbar reduzida -->
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Navegação do toggle"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a
-                  target="_blank"
-                  href="https://github.com/carolinacastilhos/Miaus_PetShop_Digital"
-                  class="nav-link"
-                  >Sobre Nós</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="produtos.html" class="nav-link">Produtos</a>
-              </li>
-              <li class="nav-item">
-                <a href="servicos.html" class="nav-link">Serviços</a>
-              </li>
-              <li class="nav-item">
-                <a target="_blank" href="construcao.html" class="nav-link"
-                  >FAQ</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="login.html" class="nav-link">Minha Conta</a>
-              </li>
-              <li class="nav-item">
-                <a target="_blank" href="construcao.html" class="nav-link"
-                  ><img
-                    src="/assets/img/carrinho.png"
-                    alt="ícone do carrinho de compra"
-                /></a>
-              </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                target="_blank"
+                href="https://github.com/carolinacastilhos/Miaus_PetShop_Digital"
+                class="nav-link"
+                >Sobre Nós</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="produtos.html" class="nav-link">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a href="servicos.html" class="nav-link">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" href="construcao.html" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">Minha Conta</a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" href="construcao.html" class="nav-link"
+                ><img
+                  src="/assets/img/carrinho.png"
+                  alt="ícone do carrinho de compra"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <form
+              class="justify-content-center justify-content-md-start mb-3 mb-md-0"
+            >
+              <div class="input-group input-group-sm">
+                <input
+                  type="text"
+                  id="search"
+                  class="form-control inputPesquisa"
+                  placeholder="Digite aqui o produto que procura"
+                />
+                <button class="btnPesquisar">Pesquisar</button>
+              </div>
+            </form>
           </div>
         </div>
-      </nav>
-
-      <div class="barraPesquisa">
-        <form
-          action="https://formsubmit.co/carolinacastilhos.vet@gmail.com"
-          method="POST"
-        >
-          <!-- <label for="procura">O que você procura?</label> -->
-          <select name="procura" id="procura">
-            <option value="">O que você procura?</option>
-            <option value="produtos">Produtos</option>
-            <option value="Serviços">Serviços</option>
-          </select>
-
-          <!-- <label for="categoria">Tipo ou Categoria</label> -->
-          <select name="categoria" id="categoria">
-            <option value="">Tipo ou Categoria</option>
-            <option value="racaoSeca">Ração Seca</option>
-            <option value="racaoUmida">Ração Úmida</option>
-            <option value="banhoPequeno">Banho pequeno porte</option>
-            <option value="banhoGrande">Banho grande porte</option>
-            <option value="tosaPequeno">Tosa pequeno porte</option>
-            <option value="tosaGrande">Tosa grande porte</option>
-            <option value="tosaHigienica">Tosa higiênica</option>
-            <option value="telebusca">Tele-busca</option>
-            <option value="teleentrega">Tele-entrega</option>
-          </select>
-
-          <!-- <label for="especie">Especie do pet</label> -->
-          <select name="especie" id="especie">
-            <option value="">Espécie do pet</option>
-            <option value="canino">Canino</option>
-            <option value="felino">Felino</option>
-          </select>
-
-          <!-- <label for="localizacao">Localização</label> -->
-          <select name="localizacao" id="localizacao">
-            <option value="">Localização</option>
-            <option value="AC">Acre</option>
-            <option value="AL">Alagoas</option>
-            <option value="AP">Amapá</option>
-            <option value="AM">Amazonas</option>
-            <option value="BA">Bahia</option>
-            <option value="CE">Ceará</option>
-            <option value="DF">Distrito Federal</option>
-            <option value="ES">Espírito Santo</option>
-            <option value="GO">Goiás</option>
-            <option value="MA">Maranhão</option>
-            <option value="MT">Mato Grosso</option>
-            <option value="MS">Mato Grosso do Sul</option>
-            <option value="MG">Minas Gerais</option>
-            <option value="PA">Pará</option>
-            <option value="PB">Paraíba</option>
-            <option value="PR">Paraná</option>
-            <option value="PE">Pernambuco</option>
-            <option value="PI">Piauí</option>
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="RN">Rio Grande do Norte</option>
-            <option value="RS">Rio Grande do Sul</option>
-            <option value="RO">Rondônia</option>
-            <option value="RR">Roraima</option>
-            <option value="SC">Santa Catarina</option>
-            <option value="SP">São Paulo</option>
-            <option value="SE">Sergipe</option>
-            <option value="TO">Tocantins</option>
-          </select>
-
-          <input
-            type="text"
-            name="procurar"
-            placeholder="Pesquisar..."
-            id="procurar"
-          />
-
-          <button type="submit" class="btnPesquisar">
-            <img src="/assets/img/lupa.png" alt="ícone de lupa" />Pesquisar
-          </button>
-        </form>
       </div>
     </header>
 
@@ -247,16 +186,29 @@
 
     <section class="cardsServicos container mt-3">
       <h2>Produtos que você encontra na MiAus</h2>
-      <!-- primeira linha -->
+
+      <div
+        id="noResultsMessage"
+        class="msgbusca"
+        style="display: none; text-align: center"
+      >
+        Não foram encontrados os produtos pesquisados.
+      </div>
+
       <div class="row">
         <!-- primeira coluna -->
-        <div class="col-lg-4">
-          <div class="card">
+        <div
+          class="col-lg-4 product-item"
+          data-product-name="Pet Delícia Veggie Cães Adultos"
+        >
+          <div class="card h-100">
+            <a href="" class="position-absolute p-3 text-danger">
+              <i class="fa-regular fa-heart cardicon"></i>
+            </a>
             <img
               class="card-img-top"
               src="/assets/img/petDelicia1.png"
-              alt="lata com embalagem verde da ração úmida para cães"
-              style="width: 100%"
+              alt="lata da ração úmida veggie para cães adultos da marca pet delícia"
             />
             <div class="cardBody">
               <h3 class="cardTitle text-center">
@@ -281,12 +233,18 @@
         </div>
 
         <!-- segunda coluna -->
-        <div class="col-lg-4">
-          <div class="card">
+        <div
+          class="col-lg-4 product-item"
+          data-product-name="Gran Plus Gourmet para Gatos Castrados"
+        >
+          <div class="card h-100">
+            <a href="" class="position-absolute right-0 p-3 text-danger">
+              <i class="fa-solid fa-heart cardicon"></i>
+            </a>
             <img
               class="card-img-top"
               src="/assets/img/granPlus1.png"
-              alt="embalagem bordo de ração úmida para gatos"
+              alt="embalagem de ração úmida para gatos castrados da marca glan plus "
               style="width: 100%"
             />
             <div class="cardBody">
@@ -312,12 +270,18 @@
         </div>
 
         <!-- terceira coluna -->
-        <div class="col-lg-4">
-          <div class="card">
+        <div
+          class="col-lg-4 product-item"
+          data-product-name="Premier Nattu Cães Adultos Porte Pequeno"
+        >
+          <div class="card h-100">
+            <a href="" class="position-absolute p-3 text-danger">
+              <i class="fa-regular fa-heart cardicon"></i>
+            </a>
             <img
               class="card-img-top"
               src="/assets/img/premierNattu1.png"
-              alt="gato tomando banho"
+              alt="embalagem da ração premier nattu cães adultos porte pequeno"
               style="width: 100%"
             />
             <div class="cardBody">
@@ -346,12 +310,18 @@
       <!-- segunda linha -->
       <div class="row mt-4">
         <!-- primeira coluna -->
-        <div class="col-lg-4">
-          <div class="card">
+        <div
+          class="col-lg-4 product-item"
+          data-product-name="Royal Canin Gatos Adultos Sensible"
+        >
+          <div class="card h-100">
+            <a href="" class="position-absolute right-0 p-3 text-danger">
+              <i class="fa-solid fa-heart cardicon"></i>
+            </a>
             <img
               class="card-img-top"
               src="/assets/img/royalCanin1.png"
-              alt="cao pequeno sendo escovado e higienizado"
+              alt="embalagem de ração gatos adultos da marca royal canin sensible"
               style="width: 100%"
             />
             <div class="cardBody">
@@ -376,12 +346,18 @@
         </div>
 
         <!-- segunda coluna -->
-        <div class="col-lg-4">
-          <div class="card">
+        <div
+          class="col-lg-4 product-item"
+          data-product-name="Sachê Pedigree Adulto Raças Pequenas Sabor Cordeiro"
+        >
+          <div class="card h-100">
+            <a href="" class="position-absolute p-3 text-danger">
+              <i class="fa-regular fa-heart cardicon"></i>
+            </a>
             <img
               class="card-img-top"
               src="/assets/img/pedigree1.png"
-              alt="cão pequeno sendo tosado com tesoura"
+              alt="embalagem de pastosa da marca pedigree adulto raças pequenas sabor cordeiro"
               style="width: 100%"
             />
             <div class="cardBody">
@@ -406,12 +382,18 @@
         </div>
 
         <!-- terceira coluna -->
-        <div class="col-lg-4">
-          <div class="card">
+        <div
+          class="col-lg-4 product-item"
+          data-product-name="Golden Seleção Natural Cães Adultos"
+        >
+          <div class="card h-100">
+            <a href="" class="position-absolute p-3 text-danger">
+              <i class="fa-regular fa-heart cardicon"></i>
+            </a>
             <img
               class="card-img-top"
               src="/assets/img/golden1.png"
-              alt="cão pequeno sendo tosado com máquina de tosa"
+              alt="ração da marca golden seleção natural cães adultos "
               style="width: 100%"
             />
             <div class="cardBody">
@@ -436,11 +418,13 @@
       </div>
 
       <div class="btnBox">
-        <button class="btnVejaMais">Veja mais</button>
+        <button class="btnVejaMais">
+          <a href="construcao.html">Veja Mais</a>
+        </button>
       </div>
     </section>
 
-    <section class="informacoes">
+    <section class="informacoes pb-5">
       <h2>Momento Saiba Mais</h2>
       <article>
         <h3>Alimentação dos nossos pets</h3>

@@ -6,6 +6,8 @@
     <!-- Título e ícone -->
     <link rel="icon" type="icon" href="/assets/img/iconPaw.png" />
     <title>MiAus</title>
+    <!-- JavaScript  -->
+    <script src="/js/index.js" defer></script>
     <!-- Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -36,186 +38,153 @@
     ></script>
   </head>
 
-  <body style="min-width: 372px">
-    <header>
-      <nav class="navbar fixed-top navbar-expand-lg">
-        <div class="container">
-          <a href="#inicio" class="navbar-brand"
-            ><img src="/assets/img/iconMiaus2.png" alt="Ícone da Miaus"
-          /></a>
-          <!-- Navbar reduzida -->
-          <button
-            class="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Navegação do toggle"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <body>
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container">
+        <a href="#inicio" class="navbar-brand"
+          ><img src="/assets/img/iconMiaus2.png" alt="Ícone da Miaus"
+        /></a>
+        <!-- Navbar reduzida -->
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Navegação do toggle"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a
-                  target="_blank"
-                  href="https://github.com/carolinacastilhos/Miaus_PetShop_Digital"
-                  class="nav-link"
-                  >Sobre Nós</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="/pages/produtos.html" class="nav-link">Produtos</a>
-              </li>
-              <li class="nav-item">
-                <a href="/pages/servicos.html" class="nav-link">Serviços</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  target="_blank"
-                  href="/pages/construcao.html"
-                  class="nav-link"
-                  >FAQ</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="/pages/login.html" class="nav-link">Minha Conta</a>
-              </li>
-              <li class="nav-item">
-                <a
-                  target="_blank"
-                  href="/pages/construcao.html"
-                  class="nav-link"
-                  ><img
-                    src="/assets/img/carrinho.png"
-                    alt="ícone do carrinho de compra"
-                /></a>
-              </li>
-            </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                target="_blank"
+                href="https://github.com/carolinacastilhos/Miaus_PetShop_Digital"
+                class="nav-link"
+                >Sobre Nós</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/pages/produtos.html" class="nav-link">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a href="/pages/servicos.html" class="nav-link">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" href="/pages/construcao.html" class="nav-link"
+                >FAQ</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="/pages/login.html" class="nav-link">Minha Conta</a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" href="/pages/construcao.html" class="nav-link"
+                ><img
+                  src="/assets/img/carrinho.png"
+                  alt="ícone do carrinho de compra"
+              /></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md-12">
+            <form
+              class="justify-content-center justify-content-md-start mb-3 mb-md-0"
+            >
+              <div class="input-group input-group-sm" id="searchbar">
+                <input
+                  type="text"
+                  id="searchInput"
+                  class="form-control inputPesquisa"
+                  placeholder="Digite aqui o que procura"
+                  autocomplete="off"
+                />
+                <button type="button" id="searchButton" class="btnPesquisar">
+                  Pesquisar
+                </button>
+              </div>
+              <!-- Lista de sugestões -->
+              <ul id="suggestionsList">
+                <li class="suggestion-item">Serviços</li>
+                <li class="suggestion-item">Produtos</li>
+                <li class="suggestion-item">Tosa</li>
+                <li class="suggestion-item">Banho</li>
+              </ul>
+            </form>
           </div>
         </div>
-      </nav>
-
-      <div class="barraPesquisa">
-        <form
-          action="https://formsubmit.co/carolinacastilhos.vet@gmail.com"
-          method="POST"
-        >
-          <!-- <label for="procura">O que você procura?</label> -->
-          <select name="procura" id="procura">
-            <option value="">O que você procura?</option>
-            <option value="produtos">Produtos</option>
-            <option value="Serviços">Serviços</option>
-          </select>
-
-          <!-- <label for="categoria">Tipo ou Categoria</label> -->
-          <select name="categoria" id="categoria">
-            <option value="">Tipo ou Categoria</option>
-            <option value="racaoSeca">Ração Seca</option>
-            <option value="racaoUmida">Ração Úmida</option>
-            <option value="banhoPequeno">Banho pequeno porte</option>
-            <option value="banhoGrande">Banho grande porte</option>
-            <option value="tosaPequeno">Tosa pequeno porte</option>
-            <option value="tosaGrande">Tosa grande porte</option>
-            <option value="tosaHigienica">Tosa higiênica</option>
-            <option value="telebusca">Tele-busca</option>
-            <option value="teleentrega">Tele-entrega</option>
-          </select>
-
-          <!-- <label for="especie">Especie do pet</label> -->
-          <select name="especie" id="especie">
-            <option value="">Espécie do pet</option>
-            <option value="canino">Canino</option>
-            <option value="felino">Felino</option>
-          </select>
-
-          <!-- <label for="localizacao">Localização</label> -->
-          <select name="localizacao" id="localizacao">
-            <option value="">Localização</option>
-            <option value="AC">Acre</option>
-            <option value="AL">Alagoas</option>
-            <option value="AP">Amapá</option>
-            <option value="AM">Amazonas</option>
-            <option value="BA">Bahia</option>
-            <option value="CE">Ceará</option>
-            <option value="DF">Distrito Federal</option>
-            <option value="ES">Espírito Santo</option>
-            <option value="GO">Goiás</option>
-            <option value="MA">Maranhão</option>
-            <option value="MT">Mato Grosso</option>
-            <option value="MS">Mato Grosso do Sul</option>
-            <option value="MG">Minas Gerais</option>
-            <option value="PA">Pará</option>
-            <option value="PB">Paraíba</option>
-            <option value="PR">Paraná</option>
-            <option value="PE">Pernambuco</option>
-            <option value="PI">Piauí</option>
-            <option value="RJ">Rio de Janeiro</option>
-            <option value="RN">Rio Grande do Norte</option>
-            <option value="RS">Rio Grande do Sul</option>
-            <option value="RO">Rondônia</option>
-            <option value="RR">Roraima</option>
-            <option value="SC">Santa Catarina</option>
-            <option value="SP">São Paulo</option>
-            <option value="SE">Sergipe</option>
-            <option value="TO">Tocantins</option>
-          </select>
-
-          <input
-            type="text"
-            name="procurar"
-            placeholder="Pesquisar..."
-            id="procurar"
-          />
-
-          <button type="submit" class="btnPesquisar">
-            <img src="/assets/img/lupa.png" alt="ícone de lupa" />Pesquisar
-          </button>
-        </form>
       </div>
     </header>
 
-    <section>
-      <h1 class="slogan" id="inicio">
-        Sua rotina não pode te impedir de ter um tempo de qualidade com seu pet.
-        Conte com a MiAus!
-      </h1>
-      <h2 class="pergunta">O que oferecemos?</h2>
-      <div class="boxProdutos">
-        <h2>Produtos</h2>
-        <h3>Categorias</h3>
-        <ul>
-          <li><a href="/pages/produtos.html">Ração Seca Cães</a></li>
-          <li><a href="/pages/produtos.html">Ração Úmida Cães</a></li>
-          <li><a href="/pages/produtos.html">Ração Seca Gatos</a></li>
-          <li><a href="/pages/produtos.html">Ração Úmida Gatos</a></li>
-        </ul>
-      </div>
-      <div class="boxServicos">
-        <h2>Serviços</h2>
-        <h3>Tipos</h3>
-        <ul>
-          <li>
-            <a href="/pages/servicos.html">Banhos Animais pequeno porte</a>
-          </li>
-          <li>
-            <a href="/pages/servicos.html">Banhos Animais grande porte</a>
-          </li>
-          <li><a href="/pages/servicos.html">Tosa Animais pequeno porte</a></li>
-          <li><a href="/pages/servicos.html">Tosa Animais grande porte</a></li>
-          <li><a href="/pages/servicos.html">Tosa Higiênica</a></li>
-          <li><a href="/pages/servicos.html">Tele-Busca</a></li>
-          <li><a href="/pages/servicos.html">Tele-Entrega</a></li>
-        </ul>
-      </div>
-    </section>
+    <div
+      class="container boxprincipal pb-5 d-flex flex-column align-items-center justify-content-center"
+    >
+      <div
+        class="row align-items-center justify-content-center text-center flex-grow-1"
+      >
+        <!-- Seção de Texto e Listas -->
+        <section class="col-lg-7 col-md-12 col-12 mb-md-0 mt-sm-5">
+          <div class="titulos text-center">
+            <h1 class="slogan pb-3" id="inicio">
+              Sua rotina não pode te impedir de ter um tempo de qualidade com
+              seu pet. Conte com a MiAus!
+            </h1>
+            <h2 class="pergunta">O que oferecemos?</h2>
+          </div>
 
-    <aside>
-      <div class="imgPgInicial">
-        <img src="/assets/img/caoGrama.png" alt="cão deitado na grama" />
+          <div class="boxProdutos text-center mb-4">
+            <h2>Produtos</h2>
+            <h3>Categorias</h3>
+            <ul class="list-unstyled">
+              <li><a href="/pages/produtos.html">Ração Seca Cães</a></li>
+              <li><a href="/pages/produtos.html">Ração Úmida Cães</a></li>
+              <li><a href="/pages/produtos.html">Ração Seca Gatos</a></li>
+              <li><a href="/pages/produtos.html">Ração Úmida Gatos</a></li>
+            </ul>
+          </div>
+
+          <div class="boxServicos text-center">
+            <h2>Serviços</h2>
+            <h3>Tipos</h3>
+            <ul class="list-unstyled">
+              <li>
+                <a href="/pages/servicos.html">Banhos Animais pequeno porte</a>
+              </li>
+              <li>
+                <a href="/pages/servicos.html">Banhos Animais grande porte</a>
+              </li>
+              <li>
+                <a href="/pages/servicos.html">Tosa Animais pequeno porte</a>
+              </li>
+              <li>
+                <a href="/pages/servicos.html">Tosa Animais grande porte</a>
+              </li>
+              <li><a href="/pages/servicos.html">Tosa Higiênica</a></li>
+              <li><a href="/pages/servicos.html">Tele-Busca</a></li>
+              <li><a href="/pages/servicos.html">Tele-Entrega</a></li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- Imagem -->
+        <aside class="col-lg-5 col-md-12 col-12 mb-md-0">
+          <div class="imgPgInicial text-center">
+            <img
+              src="/assets/img/caoGrama.png"
+              alt="cão deitado na grama"
+              class="img-fluid"
+            />
+          </div>
+        </aside>
       </div>
-    </aside>
+    </div>
 
     <footer class="border-top bottom">
       <div class="container">

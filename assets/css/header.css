@@ -19,48 +19,57 @@
   padding: 0.8rem;
 }
 
-.barraPesquisa {
-  margin-top: 9.31rem;
-  margin-left: 4.81rem;
-  width: 62rem;
-  height: 4.5625rem;
-  border-radius: 1.25rem;
-  background: rgba(221, 221, 221, 0.7);
+.form-control:focus {
+  border-color: #e7be72;
+  box-shadow: inset 0 1px 1px #e7be72, 0 0 8px #e7be72;
 }
 
-.barraPesquisa form {
-  margin-left: 2rem;
-  padding: 0.6rem;
-}
-
-.barraPesquisa select,
-.barraPesquisa input {
+.inputPesquisa {
   width: 8.625rem;
-  height: 2.375rem;
-  border: none;
-  border-radius: 0.625rem;
-  background: #faf7f5;
+  height: 3.125rem;
+  background: #fafafa;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   font-family: Roboto;
-  font-size: 0.75rem;
+  font-size: 1rem;
   font-style: normal;
   font-weight: 400;
-  margin-left: 0.5rem;
 }
 
 .btnPesquisar {
   width: 8.625rem;
   height: 3.125rem;
-  background-color: var(--warning);
+  background-color: var(--accent);
   font-family: "Roboto", sans-serif;
-  font-size: 0.9375rem;
+  font-size: 1rem;
   font-weight: 700;
-  color: var(--base);
-  border-radius: 0.625rem;
+  color: var(--neutral);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 0.4rem;
   border: none;
   margin-left: 0.5rem;
 }
 
-.btnPesquisar img {
-  padding-right: 0.5rem;
+.btnPesquisar:hover {
+  background-color: #e7be72;
+}
+
+#suggestionsList {
+  display: none;
+  border: 1px solid #ccc;
+  position: absolute;
+  background: white;
+  z-index: 1000;
+  width: 10rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0.4rem;
+}
+
+.suggestion-item {
+  padding: 0.625rem;
+  cursor: pointer;
+}
+.suggestion-item:hover {
+  background-color: #f0f0f0;
 }

@@ -38,62 +38,58 @@
   </head>
 
   <body>
-    <header>
-      <nav class="navbar fixed-top navbar-expand-lg">
-        <div class="container">
-          <a href="/index.html" class="navbar-brand"
-            ><img src="/assets/img/iconMiaus2.png" alt="Ícone da Miaus"
-          /></a>
-          <!-- Navbar reduzida -->
-          <button
-            class="navbar-toggler"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Navegação do toggle"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
+    <nav class="navbar fixed-top navbar-expand-lg">
+      <div class="container">
+        <a href="/index.html" class="navbar-brand"
+          ><img src="/assets/img/iconMiaus2.png" alt="Ícone da Miaus"
+        /></a>
+        <!-- Navbar reduzida -->
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Navegação do toggle"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item">
-                <a
-                  target="_blank"
-                  href="https://github.com/carolinacastilhos/Miaus_PetShop_Digital"
-                  class="nav-link"
-                  >Sobre Nós</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="produtos.html" class="nav-link">Produtos</a>
-              </li>
-              <li class="nav-item">
-                <a href="servicos.html" class="nav-link">Serviços</a>
-              </li>
-              <li class="nav-item">
-                <a target="_blank" href="construcao.html" class="nav-link"
-                  >FAQ</a
-                >
-              </li>
-              <li class="nav-item">
-                <a href="login.html" class="nav-link">Minha Conta</a>
-              </li>
-              <li class="nav-item">
-                <a target="_blank" href="construcao.html" class="nav-link"
-                  ><img
-                    src="/assets/img/carrinho.png"
-                    alt="ícone do carrinho de compra"
-                /></a>
-              </li>
-            </ul>
-          </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a
+                target="_blank"
+                href="https://github.com/carolinacastilhos/Miaus_PetShop_Digital"
+                class="nav-link"
+                >Sobre Nós</a
+              >
+            </li>
+            <li class="nav-item">
+              <a href="produtos.html" class="nav-link">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a href="servicos.html" class="nav-link">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" href="construcao.html" class="nav-link">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a href="login.html" class="nav-link">Minha Conta</a>
+            </li>
+            <li class="nav-item">
+              <a target="_blank" href="construcao.html" class="nav-link"
+                ><img
+                  src="/assets/img/carrinho.png"
+                  alt="ícone do carrinho de compra"
+              /></a>
+            </li>
+          </ul>
         </div>
-      </nav>
-    </header>
+      </div>
+    </nav>
 
-    <section>
+    <section class="pb-5">
       <div class="cadastro">
         <h1>Cadastro</h1>
         <h2>Boas-vindas!</h2>
@@ -397,8 +393,11 @@
           Ao finalizar, você receberá uma confirmação por e-mail.
         </p>
         <div class="btnBox">
+          <button class="btnFinalizar">
+            <a href="/index.html">Concluir</a>
+          </button>
           <button class="btnVoltar"><a href="/index.html">Cancelar</a></button>
-          <input type="submit" value="Finalizar" class="btnFinalizar" />
+          <!-- <input type="submit" value="Finalizar" class="btnFinalizar" /> -->
         </div>
       </form>
     </section>

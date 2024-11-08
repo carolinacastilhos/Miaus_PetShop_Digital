@@ -1,6 +1,4 @@
 * {
-  /* margin: 0;
-  padding: 0; */
   box-sizing: border-box;
 }
 
@@ -20,30 +18,31 @@ body {
   background-color: var(--base);
 }
 
-.slogan,
-.pergunta {
+header {
+  padding-top: 12.5rem;
+}
+
+.boxprincipal {
   margin-top: 4.25rem;
+  padding: 0 1.5rem;
+}
+
+.titulos {
   color: var(--neutral);
   font-family: "Montserrat", sans-serif;
   font-size: 2.0625rem;
-  line-height: 3.125rem;
-  letter-spacing: 0.0125rem;
-  width: 43.9375rem;
+  padding-bottom: 2rem;
+  max-width: 45rem;
+  margin: 0 auto;
 }
 
 .slogan {
-  margin-left: 4.81rem;
   font-weight: 700;
+  line-height: 3.125rem;
 }
 
 .pergunta {
-  margin-left: 16rem;
   font-weight: 500;
-}
-
-.imgPgInicial img {
-  margin-top: -60.75rem;
-  margin-left: 57rem;
 }
 
 .boxProdutos,
@@ -52,12 +51,18 @@ body {
   flex-direction: column;
   font-family: "Montserrat", sans-serif;
   font-style: normal;
-  letter-spacing: 0.0125rem;
   color: var(--neutral);
   text-align: center;
-  width: 42rem;
-  margin-left: 5.81rem;
-  margin-top: 3rem;
+  margin-bottom: 1.25rem;
+  padding: 0 1rem;
+}
+
+.boxServicos {
+  margin-top: 1rem;
+}
+
+.boxServicos {
+  margin-top: 2rem;
 }
 
 .boxProdutos h2,
@@ -69,7 +74,7 @@ body {
 .boxProdutos h3,
 .boxServicos h3 {
   font-size: 1.125rem;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .boxProdutos ul,
@@ -130,13 +135,61 @@ body {
 }
 
 .boxProdutos {
-  height: 11.02119rem;
+  height: auto;
 }
 
 .boxServicos {
-  height: 17.375rem;
+  height: auto;
 }
 
 .boxServicos li:nth-last-child(-n + 3) {
   background-color: var(--accent);
+}
+
+.msgbusca {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--error);
+}
+
+@media (max-width: 768px) {
+  .titulos h1 {
+    font-size: 1.6rem;
+  }
+
+  .titulos h2 {
+    font-size: 1.2rem;
+  }
+
+  .boxProdutos,
+  .boxServicos {
+    margin-bottom: 1.25rem;
+    padding: 0;
+  }
+
+  .imgPgInicial img {
+    max-width: 80%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .titulos h1 {
+    font-size: 1.3rem;
+  }
+
+  .titulos h2 {
+    font-size: 1rem;
+  }
+
+  .boxProdutos,
+  .boxServicos {
+    margin-bottom: 1rem;
+    padding: 0;
+  }
+
+  .imgPgInicial img {
+    max-width: 100%;
+  }
 }
